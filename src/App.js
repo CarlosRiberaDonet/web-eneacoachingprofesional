@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Banner from "./components/Banner"; // Importamos el nuevo componente
+import Footer from "./components/Footer";
+import "./index.css"; // Estilos globales
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Banner /> {/* Agregamos el Banner aquí */}
+      <main>
+        <h1>Bienvenido a tu espacio de bienestar</h1>
+        <p>Apoyo psicológico personalizado para alcanzar tu equilibrio emocional.</p>
+      </main>
+      <Footer />
     </div>
   );
 }

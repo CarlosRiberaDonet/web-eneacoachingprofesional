@@ -1,20 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Banner from "./components/Banner"; // Importamos el nuevo componente
 import Footer from "./components/Footer";
-import "./index.css"; // Estilos globales
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Banner /> {/* Agregamos el Banner aquí */}
-      <main>
-        <h1>Bienvenido a tu espacio de bienestar</h1>
-        <p>Apoyo psicológico personalizado para alcanzar tu equilibrio emocional.</p>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

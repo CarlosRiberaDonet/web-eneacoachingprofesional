@@ -1,0 +1,21 @@
+.servicios {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .servicios ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .servicios li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  

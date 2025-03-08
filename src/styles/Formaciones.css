@@ -1,0 +1,95 @@
+/* ===== Sección de Formaciones ===== */
+.formaciones {
+  background: linear-gradient(to right, #1d4e5f, #173b4e);
+  padding: 30px 10%;
+  text-align: center;
+  color: white;
+}
+
+.formaciones h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de tarjetas */
+.formaciones-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Espaciado entre tarjetas */
+  flex-wrap: wrap;
+  padding: 40px 0;
+  max-width: auto; /* 🔹 REDUCE EL ANCHO MÁXIMO DEL CONTENEDOR */
+  margin: 0 auto; /* 🔹 Centra el contenedor en la página */
+}
+
+/* Tarjetas individuales */
+.formacion-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 350px; /* 🔹 Un ancho más controlado */
+  height: 140px; /* 🔹 Más horizontal */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* 🔹 Efecto hover para destacar cada tarjeta */
+/* 🔹 Efecto hover para destacar cada tarjeta */
+.formacion-card:hover {
+  transform: translateY(-5px);
+}
+
+.formacion-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen dentro de la tarjeta */
+.formacion-card img {
+  width: 100px; /* 🔹 Ajusta la imagen a un tamaño fijo */
+  height: 100px; /* 🔹 Evita que se deforme */
+  object-fit: contain; /* 🔹 Se asegura de que la imagen no se estire */
+  border-radius: 10px 0 0 10px; /* 🔹 Redondea solo los bordes izquierdos */
+  background-color: white;
+}
+
+
+
+/* Contenedor de información */
+.formacion-info {
+  flex: 1; /* 🔹 Hace que el texto ocupe el resto del espacio disponible */
+  padding-left: 15px; /* 🔹 Separa el texto de la imagen */
+}
+
+
+.formacion-info h3 {
+  font-size: 1.2rem;
+  color: #173b4e;
+  margin-bottom: 5px;
+}
+
+.formacion-info p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Botón "Ver más" */
+.btn-ver-mas {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #ffa500;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+  background: #e69500;
+}

@@ -1,22 +1,38 @@
-import React, { useState } from "react";
-import "../styles/Header.css"; // Asegúrate de crear este archivo de estilos
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Usar Link en lugar de <a>
+import "../styles/Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   // Función para alternar el menú en móviles
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Función para manejar el scroll y agregar la clase sticky
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="main-header">
+    <header className={`main-header ${isSticky ? "sticky" : ""}`}>
       <nav className="navbar">
         {/* Logo */}
         <div className="logo">
-          <a href="#">
-            <img src="/images/logo.png" alt="Logo" className="logo-img" />
-          </a>
+          <Link to="/">
+            <img src="/images/logo.png" alt="Logo Eneacoaching" className="logo-img" />
+          </Link>
         </div>
 
         {/* Botón de menú para móviles */}
@@ -24,13 +40,48 @@ const Header = () => {
           ☰
         </button>
 
-        {/* Enlaces de navegación */}
-        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre mí</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Testimonios</a></li>
-          <li><a href="#">Contacto</a></li>
+        {/* Menú de navegación */}
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/sobre-mi">Sobre mí</Link></li>
+
+          {/* Dropdown Eneagrama */}
+          <li className="dropdown">
+            <Link to="#">Eneagrama ▾</Link>
+            <ul className="dropdown-menu">
+              <li><Link to="#">¿Qué es?</Link></li>
+              <li><Link to="#">¿Para qué sirve?</Link></li>
+              <li><Link to="#">Los tipos de personalidad</Link></li>
+              <li><Link to="#">Curso básico de eneagrama</Link></li>
+              <li><Link to="#">Otros talleres/Cursos</Link></li>
+            </ul>
+          </li>
+
+          {/* Dropdown Coaching */}
+          <li className="dropdown">
+            <Link to="#">Coaching ▾</Link>
+            <ul className="dropdown-menu">
+              <li><Link to="#">¿Qué es?</Link></li>
+              <li><Link to="#">¿Para qué sirve?</Link></li>
+              <li><Link to="#">Sesiones Individuales</Link></li>
+              <li><Link to="#">Coaching para empresas</Link></li>
+              <li><Link to="#">Talleres/Cursos</Link></li>
+            </ul>
+          </li>
+
+          {/* Dropdown Eneacoaching */}
+          <li className="dropdown">
+            <Link to="#">Eneacoaching ▾</Link>
+            <ul className="dropdown-menu">
+              <li><Link to="#">¿Qué es?</Link></li>
+              <li><Link to="#">¿Para qué sirve?</Link></li>
+              <li><Link to="#">Eneacoaching Profesional</Link></li>
+              <li><Link to="#">Eneacoaching Esencial</Link></li>
+            </ul>
+          </li>
+
+          <li><Link to="#">Testimonios</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </nav>
     </header>

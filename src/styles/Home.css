@@ -1,0 +1,49 @@
+.home {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .home-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .cta-btn {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e0a800;
+  }
+
+  /* 🔹 Contenedor de redes sociales */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 🔹 Más separación entre iconos */
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 2rem; /* 🔹 Iconos más grandes */
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.3);
+    color: #ffc107; /* 🔹 Efecto dorado al hacer hover */
+  }

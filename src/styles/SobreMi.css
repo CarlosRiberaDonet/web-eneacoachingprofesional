@@ -1,0 +1,17 @@
+.sobre-mi {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .sobre-mi h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-mi p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  

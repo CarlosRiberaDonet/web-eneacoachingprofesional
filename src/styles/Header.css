@@ -1,79 +1,189 @@
-/* Header */
+/* ===================== */
+/* 🟢 MENÚ PRINCIPAL 🟢 */
+/* ===================== */
+
 .main-header {
-    background-color: #004d73;
-    color: white;
-    padding: 15px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background-color: #004d73;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+.main-header.sticky {
+  background-color: rgba(0, 77, 115, 0.9);
 }
 
-/* Logo */
+/* ===================== */
+/* 🔹 Logo 🔹 */
+/* ===================== */
 .logo-img {
-    width: 140px;
+  width: clamp(80px, 10vw, 120px);
+  border-radius: 50%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  display: block;
+  background-color: white;
+  padding: 5px;
 }
 
-/* Nav Links */
+/* ===================== */
+/* 🔹 Menú 🔹 */
+/* ===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.nav-links li {
+  position: relative;
 }
 
-.nav-links li a:hover {
-    color: #ffc107;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
 }
 
-/* Responsive Navbar */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
+.nav-links a:hover {
+  color: #ffc107;
 }
 
-/* Responsive Design */
+/* ===================== */
+/* 🔻 MENÚ DESPLEGABLE 🔻 */
+/* ===================== */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* Centrar el dropdown debajo del enlace */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  min-width: 220px;
+  z-index: 999;
+  text-align: left;
+}
+
+.dropdown-menu li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu a {
+  color: black;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+
+/* 🔥 Hacer que el dropdown se abra con hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ===================== */
+/* 📱 MENÚ MÓVIL 📱 */
+/* ===================== */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    background-color: #004d73;
+    box-shadow: none;
+    text-align: center;
+  }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #004d73;
-        width: 100%;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    }
+  .dropdown-menu a {
+    color: white;
+    padding: 10px;
+  }
 
-    .nav-links.active {
-        display: flex;
-    }
+  .dropdown-menu a:hover {
+    background-color: #00334e;
+  }
+}
 
-    .nav-links li {
-        text-align: center;
-        margin: 10px 0;
-    }
+/* 🔥 Hacer que el dropdown se abra con hover en escritorio */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ===================== */
+/* 📱 MENÚ MÓVIL 📱 */
+/* ===================== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #004d73;
+    padding: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background-color: #004d73;
+  }
+
+  .dropdown-menu a {
+    color: white;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: #00334e;
+  }
 }

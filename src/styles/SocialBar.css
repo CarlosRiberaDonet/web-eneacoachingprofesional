@@ -1,0 +1,57 @@
+/* 🔹 Franja de redes sociales y teléfono */
+.social-bar {
+    background-color: #ffffff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos tengan espacio entre ellos */
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 100%; /* Asegura que ocupe toda la pantalla */
+    height: 50px; /* Ajusta la altura de la barra */
+}
+  
+  /* 🔹 Contenedor para alinear íconos y teléfono */
+  .social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* 🔹 Estilos para los iconos de redes sociales */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: #004d73;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffc107; /* Color dorado al hacer hover */
+  }
+  
+  /* 🔹 Estilos para el número de teléfono */
+  .phone-number a {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .phone-number a:hover {
+    color: #ffc107;
+  }
+
+  /* 🔹 Línea separadora (opcional, si quieres una línea entre SocialBar y Banner) */
+.separator {
+  height: 5px;
+  background: linear-gradient(to right, #004d73, #1DA1F2);
+  width: 100%;
+}
+  

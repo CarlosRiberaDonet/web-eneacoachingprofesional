@@ -7,19 +7,22 @@ import eneacoaching from "../assets/images/eneacoaching.png";
 const formacionesData = [
   {
     imagen: eneagrama,
-    titulo: "Eneagrama Básico",
+    titulo: "ENEACOACHING PROFESIONAL",
+    descripcion: "Conecta con tu esencia y con tu propósito profesional a través del Eneagrama y del Coaching Ontológico",
     fecha: "7 de mayo",
     link: "#",
   },
   {
     imagen: coaching,
-    titulo: "Introducción Eneagrama",
+    titulo: "ENEACOACHING PARA EQUIPOS",
+    descripcion: "Conecta con tu máximo potencial en tu empresa y alinea tus creencias, valores y fortalezas con tu equipo de trabajo",
     fecha: "10 de septiembre",
     link: "#",
   },
   {
     imagen: eneacoaching,
-    titulo: "Experto en Eneagrama",
+    titulo: "CURSO BÁSICO EN ENEAGRAMA",
+    descripcion: "iníciate en esta apasionante herramienta de autoconocimiento y desarrollo personal para conectar con tu máximo potencial",
     fecha: "15 de Octubre",
     link: "#",
   },
@@ -35,6 +38,7 @@ const Formaciones = () => {
             <img src={formacion.imagen} alt={formacion.titulo} className="formacion-img"/>
             <div className="formacion-info">
               <h3>{formacion.titulo}</h3>
+              <p className="formacion-descripcion">{formacion.descripcion}</p>  {/* 🔹 Nueva línea con la descripción */}
               <p>{formacion.fecha}</p>
               <a href={formacion.link} className="btn-ver-mas">Ver más</a>
             </div>

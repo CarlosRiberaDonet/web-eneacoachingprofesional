@@ -1,17 +1,114 @@
+/* ===== Sección Sobre Mí ===== */
 .sobre-mi {
-    padding: 50px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(220, 235, 240, 0.95)),
+  url("/src/assets/images/2.png") no-repeat center/cover;
+  padding: 100px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Contenedor general para dividir texto e imagen */
+.sobre-mi-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Estilos para el texto */
+.text-content {
+  flex: 1;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.text-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #004d73; /* Azul corporativo */
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+}
+
+.text-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #173b4e;
+  font-family: "Lora", serif;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333; /* Color más oscuro para mejor legibilidad */
+  font-family: "Lora", serif;
+}
+
+/* Botón Contacto */
+.btn-contacto {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #004d73, #006d94);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-contacto:hover {
+  background: #ffc107;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.2));
+  object-fit: cover;
+  position: relative;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 900px) {
+  .sobre-mi-content {
+    flex-direction: column;
     text-align: center;
-    background-color: #f8f9fa;
   }
-  
-  .sobre-mi h2 {
-    font-size: 2rem;
+
+  .text-content {
+    order: 2;
+    text-align: center;
+  }
+
+  .image-container {
+    order: 1;
+    justify-content: center;
     margin-bottom: 20px;
   }
-  
-  .sobre-mi p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: auto;
+
+  .image-container img {
+    max-width: 300px;
   }
-  
+}

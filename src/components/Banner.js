@@ -9,7 +9,7 @@ const Banner = () => {
         <div className="banner-card">
           <img src="/images/eneagrama.png" alt="Morfo & Eneagrama" />
           <div className="card-content">
-            <h3>Morfo & Eneagrama</h3>
+            <h3>ENEACOACHING PROFESIONAL</h3>
             <p>7 de mayo</p>
             <button className="btn">Ver más →</button>
           </div>
@@ -17,8 +17,8 @@ const Banner = () => {
 
         <div className="banner-card">
           <img src="/images/eneagrama2.png" alt="Psicoterapia & Eneagrama" />
-          <div className="card-content">s
-            <h3>Psicoterapia & Eneagrama</h3>
+          <div className="card-content">
+            <h3>ENEACOACHING PARA EQUIPOS</h3>
             <p>10 de septiembre</p>
             <button className="btn">Ver más →</button>
           </div>
@@ -27,7 +27,7 @@ const Banner = () => {
         <div className="banner-card">
           <img src="/images/eneagrama3.png" alt="Experto en Eneagrama" />
           <div className="card-content">
-            <h3>Experto en Eneagrama</h3>
+            <h3>CURSO BÁSICO EN ENEAGRAMA</h3>
             <p>Septiembre 2025</p>
             <button className="btn">Ver más →</button>
           </div>

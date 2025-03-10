@@ -13,17 +13,39 @@
   /* 🔹 Contenedor para alinear íconos y teléfono */
   .social-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
+    justify-content: flex-end; /* 🔹 Mueve los iconos y el teléfono a la derecha */
+    align-items: center; /* 🔹 Asegura que todo esté alineado verticalmente */
+    gap: 20px; /* 🔹 Espaciado entre iconos y teléfono */
+    padding: 5px 20px;
+    width: 70%;
+    position: relative;
   }
   
-  /* 🔹 Estilos para los iconos de redes sociales */
+  /* 🔹 Ajuste para los iconos */
   .social-icons {
     display: flex;
     gap: 15px;
+    align-items: center;
   }
+  
+  /* 🔹 Ajuste para el teléfono */
+  .phone-number {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-top: -2px; /* 🔹 Ajusta la altura si es necesario */
+    display: flex;
+    align-items: center; /* 🔹 Asegura que el texto del teléfono también esté alineado */
+  }
+  
+  /* 🔹 Para asegurar que todo esté alineado en móviles */
+  @media (max-width: 768px) {
+    .social-container {
+      flex-direction: column;  /* 🔹 Pone iconos y teléfono en columna */
+      text-align: center;
+    }
+  }
+  
   
   .social-icons a {
     color: #004d73;

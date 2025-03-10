@@ -1,12 +1,10 @@
 import React from "react";
 import "../styles/Home.css";
-import SobreMi from "./SobreMi";
-import Servicios from "./Servicios";
-import Testimonios from "./Testimonios";
-import Contacto from "./Contacto";
+import SocialBar from "./SocialBar";
 import Formaciones from "./Formaciones";
-import SocialBar from "./SocialBar"; //
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Vicente from "./Vicente"; // 🔹 Sección con la foto de Vicente
+import SobreMi from "./SobreMi";  // 🔹 Sección más personal
+import Contacto from "./Contacto";
 
 const Home = () => {
   return (
@@ -17,10 +15,13 @@ const Home = () => {
       {/* 🔹 Nueva sección de Formaciones */}
       <Formaciones />
 
-      {/* 🔹 Secciones adicionales */}
+      {/* 🔹 Sección con información profesional de Vicente */}
+      <Vicente />
+
+      {/* 🔹 Sección personal de Sobre Mí */}
       <SobreMi />
-      <Servicios />
-      <Testimonios />
+
+      {/* 🔹 Formulario de Contacto */}
       <Contacto />
     </main>
   );

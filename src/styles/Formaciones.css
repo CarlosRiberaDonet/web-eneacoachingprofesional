@@ -4,6 +4,19 @@
   padding: 40px 0;
   text-align: center;
   color: white;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* 🔹 Definimos la animación fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .formaciones h2 {
@@ -16,9 +29,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* 🔹 Espaciado entre tarjetas */
+  gap: 20px; /* 🔹 Espaciado entre tarjetas */
+  padding: 40px, 5px;
   flex-wrap: wrap;
-  max-width: 2000px; /* 🔹 Controla el ancho */
+  max-width: 1800px; /* 🔹 Controla el ancho */
   margin: 0 auto;
 }
 
@@ -26,43 +40,46 @@
 .formacion-card {
   background: white;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08); /* 🔹 Sombra más suave */
   text-align: left;
-  width: 500px; /* 🔹 Ajusta el ancho */
-  height: 250px; /* 🔹 Reduce la altura */
+  width: 400px; 
+  height: 250px; 
   display: flex;
   align-items: center;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🔹 Efecto hover */
+/* 🔹 Efecto hover refinado */
 .formacion-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px); /* 🔹 Movimiento más fluido */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2); /* 🔹 Sombra más elegante */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 
 /* Imagen dentro de la tarjeta */
 .formacion-card img {
-  width: 40%;
-  height: 100%;
-  object-fit: cover; /* 🔹 Ajusta la imagen sin deformarla */
-  border-radius: 12px 0 0 12px; /* 🔹 Redondeo solo a la izquierda */
+  width: 100px; /* 🔹 Tamaño de la imagen */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px; /* 🔹 Espaciado debajo de la imagen */
 }
 
 /* Contenedor de información */
 .formacion-info {
-  flex: 1; /* 🔹 Ocupa el resto del espacio */
+  flex: auto; /* 🔹 Ocupa el resto del espacio */
   padding: 10px 15px;
 }
 
 /* Títulos dentro de las tarjetas */
 .formacion-info h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
   color: #CFB53B;
   font-weight: 600;
   letter-spacing: 0.5px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
 /* Fechas */
@@ -85,15 +102,15 @@
 /* Botón "Ver más" */
 .btn-ver-mas {
   display: inline-block;
-  padding: 12px 18px; /* 🔹 Más relleno para mejor apariencia */
-  background: linear-gradient(to right, #004d73, #006d94); /* 🔥 Degradado dorado */
+  padding: 12px 18px; /*  Más relleno para mejor apariencia */
+  background: linear-gradient(to right, #004d73, #006d94); /*  Degradado dorado */
   color: white;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 8px; /* 🔹 Bordes redondeados */
+  border-radius: 8px; /*  Bordes redondeados */
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* 🔹 Sombra sutil */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /*  Sombra sutil */
   border: none;
   cursor: pointer;
   text-align: center;

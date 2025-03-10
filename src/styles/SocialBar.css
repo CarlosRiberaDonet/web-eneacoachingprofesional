@@ -1,14 +1,30 @@
-/* 🔹 Franja de redes sociales y teléfono */
+/* ===================== */
+/* SOCIAL BAR CON EFECTO DE ENTRADA */
+/* ===================== */
 .social-bar {
-    background-color: #ffffff;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between; /* Asegura que los elementos tengan espacio entre ellos */
-    align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    width: 100%; /* Asegura que ocupe toda la pantalla */
-    height: 50px; /* Ajusta la altura de la barra */
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  
+  /*  Agregamos la animación */
+  animation: slideDown 1.2s ease-in-out;
 }
+
+/* 🔹 Mismo efecto pero con un leve retraso */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   
   /* 🔹 Contenedor para alinear íconos y teléfono */
   .social-container {

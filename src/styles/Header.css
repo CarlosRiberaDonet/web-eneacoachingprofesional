@@ -1,7 +1,6 @@
 /* ===================== */
-/* MENÚ PRINCIPAL */
+/* HEADER CON EFECTO DE ENTRADA */
 /* ===================== */
-
 .main-header {
   background-color: #004d73;
   padding: 15px 20px;
@@ -13,7 +12,23 @@
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease;
+
+  /* 🔹 Agregamos la animación */
+  animation: slideDown 1s ease-in-out;
 }
+
+/* Definimos la animación */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .main-header.sticky {
   background-color: rgba(0, 77, 115, 0.9);
@@ -52,6 +67,12 @@
 
 .nav-links li {
   position: relative;
+}
+
+.dropdown-menu {
+  list-style: none; /*  Elimina las bolitas de la lista */
+  padding: 0; /*  Elimina cualquier sangría extra */
+  margin: 0; /*  Asegura que no haya márgenes */
 }
 
 .nav-links a {

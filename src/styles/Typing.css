@@ -1,53 +1,68 @@
-/* 🔹 Eliminamos la animación de entrada */
+/* =============================== */
+/* 🔹 SECCIÓN TYPING 🔹 */
+/* =============================== */
 .typing {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(220, 235, 240, 0.95));
-  padding: 80px 10%;
+  background: linear-gradient(to right, #ffffff, #f7f9fc); /*  Blanco suave con gris azulado */
+  padding: 70px 12%;
   text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  color: #173b4e;
 }
 
-/* 🔹 Estilos del Texto */
+/* Contenido */
+.typing-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* Estilos del título */
 .typing h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #004d73;
   margin-bottom: 20px;
+  text-transform: uppercase; /* 🔹 Da más impacto al título */
 }
 
+/* Texto */
 .typing p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.7;
   color: #333;
-  margin-bottom: 15px;
+  text-align: justify;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
-/* 🔹 Botón */
-.btn-typing {
+/* ===== Botón de Sesión Gratuita ===== */
+.btn-sesion {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 1rem;
+  margin-top: 25px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
   font-weight: bold;
   color: white;
-  background-color: #004d73;
+  background: linear-gradient(to right, #004d73, #006d94); /* 🔹 Azul corporativo con degradado */
   border: none;
-  border-radius: 5px;
+  border-radius: 50px; /* 🔹 Bordes más suaves */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.btn-typing:hover {
-  background: #ffc107;
+.btn-sesion:hover {
+  background: linear-gradient(to right, #ffc107, #ff9800); /* 🔹 Cambio de color a dorado */
   color: black;
+  transform: scale(1.07); /* 🔹 Efecto de crecimiento más sutil */
 }
 
-/* 🔹 Ajustes para pantallas pequeñas */
-@media (max-width: 900px) {
+/* =============================== */
+/* 📱 RESPONSIVE (Móviles) */
+/* =============================== */
+@media (max-width: 768px) {
   .typing {
-    padding: 60px 5%;
+    padding: 50px 8%;
   }
 
   .typing h2 {
@@ -56,10 +71,11 @@
 
   .typing p {
     font-size: 1rem;
+    max-width: 100%;
   }
 
-  .btn-typing {
-    padding: 10px 16px;
-    font-size: 0.9rem;
+  .btn-sesion {
+    font-size: 1rem;
+    padding: 12px 25px;
   }
 }

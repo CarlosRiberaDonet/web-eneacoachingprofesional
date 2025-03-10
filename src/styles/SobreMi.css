@@ -32,7 +32,6 @@
   font-weight: bold;
   color: #004d73; /* Azul corporativo */
   margin-bottom: 15px;
-  font-family: "Playfair Display", serif;
 }
 
 .text-content h2 {
@@ -40,14 +39,12 @@
   font-weight: bold;
   margin-bottom: 15px;
   color: #173b4e;
-  font-family: "Lora", serif;
 }
 
 .text-content p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #333; /* Color más oscuro para mejor legibilidad */
-  font-family: "Lora", serif;
 }
 
 /* Botón Contacto */

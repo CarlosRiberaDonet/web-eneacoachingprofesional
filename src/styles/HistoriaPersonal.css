@@ -1,0 +1,90 @@
+/* ===== Sección Historia Personal ===== */
+.historia {
+  background: linear-gradient(to right, #ffffff, #f8f8f8);
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.historia-content {
+  display: flex;
+  align-items: center;
+  max-width: 1100px; /* 🔹 Reducimos un poco el ancho */
+  gap: 50px; /* 🔹 Espaciado más armonioso */
+}
+
+/* Estilos para la imagen */
+.historia-imagen {
+  flex: 1;
+}
+
+.historia-imagen img {
+  width: 100%;
+  max-width: 450px; /* 🔹 Tamaño más equilibrado */
+  border-radius: 10px;
+  filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.15));
+}
+
+/* Estilos para el texto */
+.historia-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.historia-texto h2 {
+  font-size: 2.2rem; /* 🔹 Más grande y llamativo */
+  color: #004d73;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.historia-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8; /* 🔹 Mejor legibilidad */
+  color: #333;
+  text-align: justify;
+}
+
+.historia-texto strong {
+  color: #004d73;
+}
+
+/* 🔹 Animación de entrada más elegante */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.historia-texto {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 900px) {
+  .historia-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+  }
+
+  .historia-imagen img {
+      max-width: 0%;
+      margin: 0 auto; /*  Centra la imagen en móviles */
+  }
+
+  .historia-texto h2 {
+      font-size: 2rem;
+  }
+
+  .historia-texto p {
+      font-size: 1rem;
+      line-height: 1.6;
+  }
+}

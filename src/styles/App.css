@@ -1,20 +1,33 @@
+/* ========================= */
+/* 🚀 ESTILOS GENERALES */
+/* ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #004d73;
+  --secondary-color: #ffc107;
+  --text-color: #333;
+  --background-light: #f8f9fa;
+}
+
+/* 🔹 Aplicamos Lora a toda la web */
+body {
+  font-family: 'Lora', serif !important;
+  background-color: var(--background-light);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Contenedor principal */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* 🔹 Header */
 .App-header {
-  background-color: #282c34;
+  background-color: var(--primary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +37,20 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* 🔹 Asegurar que las imágenes no desborden */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 🔹 Ajustes responsivos */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-header {
+    font-size: 1.2rem;
   }
 }

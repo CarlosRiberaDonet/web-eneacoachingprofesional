@@ -15,7 +15,7 @@ const SocialBar = () => {
         </div>
         {/* 🔹 Teléfono */}
         <div className="phone-number">
-          <a href="tel:+34623148391"> 623 148 391</a>
+          <a href="tel:+34623148391"> 696 667 110</a>
         </div>
       </div>
     </section>

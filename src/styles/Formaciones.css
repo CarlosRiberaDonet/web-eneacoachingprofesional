@@ -39,18 +39,19 @@
 /* Tarjetas individuales */
 .formacion-card {
   background: white;
+  width: 800px; /*  Permite que quepan 3 tarjetas en una fila */
+  height: 800px;
+  flex-direction: row;
   border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08); /* 🔹 Sombra más suave */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
   text-align: left;
-  width: 500px; 
-  height: 250px; 
   display: flex;
   align-items: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🔹 Efecto hover refinado */
+/*  Efecto hover refinado */
 .formacion-card:hover {
   transform: translateY(-8px); /* 🔹 Movimiento más fluido */
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2); /* 🔹 Sombra más elegante */
@@ -59,9 +60,17 @@
 
 
 /* Imagen dentro de la tarjeta */
-.formacion-card img {
-  width: 140px; /*  Tamaño de la imagen */
-  height: auto;
+.formacion-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  width: 500px; 
+  height: 250px; 
+  display: flex; /* 🔹 Asegura que la imagen y el texto estén en fila */
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Contenedor de información */
@@ -127,25 +136,28 @@
 /* 📱 RESPONSIVE (Móviles) */
 /* ===================== */
 @media (max-width: 768px) {
-  .btn-ver-mas {
-    font-size: 0.9rem;
-    padding: 10px 16px;
+  .formaciones-container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .formacion-card {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    align-items: stretch; /* Estira los elementos al alto de la tarjeta */
+    width: 500px; /* Ajusta según tu diseño */
+    height: 250px; /* Ajusta según tu diseño */
+    overflow: hidden;
   }
+  
 
   .formacion-card img {
-    width: 100%;
+    width: 100%; /* 🔹 Hace que la imagen ocupe toda la parte superior */
     height: auto;
     border-radius: 12px 12px 0 0;
   }
 
   .formacion-info {
     padding: 15px;
+    text-align: center;
   }
 }

@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/Home.css";
 import SocialBar from "./SocialBar";
 import Formaciones from "./Formaciones";
-import SobreMi from "./SobreMi"; 
+import SobreMi from"./SobreMi";
 import Typing from "./Typing";
-import HistoriaPersonal from "./HistoriaPersonal"
+import Claudio from "./Claudio";
 import Contacto from "./Contacto";
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       <Typing />
 
       {/*  Sección personal de Sobre Mí */}
-      <HistoriaPersonal />
+      <Claudio />
 
       {/* 🔹 Formulario de Contacto */}
       <Contacto />

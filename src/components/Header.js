@@ -71,16 +71,17 @@ const Header = () => {
 
           {/* Dropdown Eneacoaching */}
           <li className="dropdown">
-            <Link to="#">Eneacoaching ▾</Link>
+            <Link to="#">EneaCoaching ▾</Link>
             <ul className="dropdown-menu">
               <li><Link to="#">¿Qué es?</Link></li>
               <li><Link to="#">¿Para qué sirve?</Link></li>
-              <li><Link to="#">Eneacoaching Profesional</Link></li>
-              <li><Link to="#">Eneacoaching Esencial</Link></li>
+              <li><Link to="#">EneaCoaching Profesional</Link></li>
+              <li><Link to="#">EneaCoaching Esencial</Link></li>
             </ul>
           </li>
 
           <li><Link to="#">Testimonios</Link></li>
+          <li><Link to="/contacto">Blog</Link></li>
           <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </nav>

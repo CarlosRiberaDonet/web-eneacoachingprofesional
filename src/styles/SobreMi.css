@@ -24,7 +24,7 @@
 .text-content {
   flex: 1;
   z-index: 2;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .text-content h1 {
@@ -47,6 +47,26 @@
   color: #333; /* Color más oscuro para mejor legibilidad */
 }
 
+/* Contenedor de la imagen */
+.image-container {
+  flex: 1;
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.2));
+  object-fit: cover;
+  position: relative;
+}
+
 /* Botón Contacto */
 .btn-contacto {
   display: inline-block;
@@ -66,25 +86,6 @@
   background: #ffc107;
   color: black;
   transform: scale(1.05);
-}
-
-/* Contenedor de la imagen */
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  max-width: 500px;
-}
-
-.image-container img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 10px;
-  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.2));
-  object-fit: cover;
-  position: relative;
 }
 
 /* Ajustes para pantallas pequeñas */

@@ -42,8 +42,6 @@ const Header = () => {
 
         {/* Menú de navegación */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/sobre-mi">Sobre mí</Link></li>
 
           {/* Dropdown Eneagrama */}
           <li className="dropdown">
@@ -79,7 +77,7 @@ const Header = () => {
               <li><Link to="#">EneaCoaching Esencial</Link></li>
             </ul>
           </li>
-
+          <li><Link to="/sobre-mi">Sobre mí</Link></li>
           <li><Link to="#">Testimonios</Link></li>
           <li><Link to="/contacto">Blog</Link></li>
           <li><Link to="/contacto">Contacto</Link></li>

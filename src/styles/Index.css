@@ -31,7 +31,7 @@ ul {
 
 /* 🔹 Botones */
 button, .btn, .navbar, .menu, .footer {
-  font-family: "Poppins", sans-serif; /* 🔹 Mantiene Poppins en elementos específicos */
+  font-family: "Poppins", sans-serif; /*  Mantiene Poppins en elementos específicos */
   cursor: pointer;
   border: none;
   outline: none;
@@ -39,7 +39,7 @@ button, .btn, .navbar, .menu, .footer {
 }
 
 /* ========================= */
-/* 🎨 COLORES Y VARIABLES */
+/*  COLORES Y VARIABLES */
 /* ========================= */
 :root {
   --primary-color: #004d73;

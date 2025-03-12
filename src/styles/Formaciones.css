@@ -7,7 +7,7 @@
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/* 🔹 Definimos la animación fadeIn */
+/*  Definimos la animación fadeIn */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -29,10 +29,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* 🔹 Espaciado entre tarjetas */
+  gap: 20px; /*  Espaciado entre tarjetas */
   padding: 40px, 5px;
   flex-wrap: wrap;
-  max-width: 1800px; /* 🔹 Controla el ancho */
+  max-width: 1800px; /*  Controla el ancho */
   margin: 0 auto;
 }
 
@@ -67,7 +67,7 @@
   text-align: left;
   width: 500px; 
   height: 250px; 
-  display: flex; /* 🔹 Asegura que la imagen y el texto estén en fila */
+  display: flex; /*  Asegura que la imagen y el texto estén en fila */
   align-items: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;

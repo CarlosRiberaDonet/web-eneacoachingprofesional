@@ -1,5 +1,5 @@
 /* ========================= */
-/* 🚀 ESTILOS GENERALES */
+/*  ESTILOS GENERALES */
 /* ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
 
@@ -10,19 +10,32 @@
   --background-light: #f8f9fa;
 }
 
-/* 🔹 Aplicamos Lora a toda la web */
+/* 🔹 Aplica Lora a toda la web */
 body {
   font-family: 'Lora', serif !important;
   background-color: var(--background-light);
   color: var(--text-color);
   margin: 0;
   padding: 0;
+}
+
+/* 🔹 Evita el scroll horizontal */
+html, body {
+  overflow-x: hidden; /* 🔹 Elimina el scroll lateral */
+  width: 100%;
+}
+
+/* 🔹 Asegurar que todos los elementos respeten el tamaño */
+*, *::before, *::after {
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* 🔹 Contenedor principal */
 .App {
   text-align: center;
+  width: 100%;
+  overflow-x: hidden; /* 🔹 Evita cualquier desbordamiento */
 }
 
 /* 🔹 Header */
@@ -35,6 +48,8 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%; /* 🔹 Asegura que no cause desbordamiento */
+  overflow: hidden;
 }
 
 /* 🔹 Asegurar que las imágenes no desborden */

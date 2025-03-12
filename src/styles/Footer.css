@@ -1,13 +1,123 @@
-/* Footer */
+/* ========================= */
+/*  ESTILOS GENERALES DEL FOOTER */
+/* ========================= */
 .main-footer {
-    background-color: #004d73;
+    background-color: #004d73;/* Azul oscuro */
     color: white;
+    padding: 40px 0;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 0.9rem;
+    font-family: "Lora", serif;
 }
 
-.main-footer p {
-    margin: 0;
+/* 🔹 Contenedor principal del Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ========================= */
+/*  SECCIÓN IZQUIERDA - Presentación */
+/* ========================= */
+.footer-left {
+    max-width: 30%;
+    text-align: left;
+}
+
+.footer-left h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-left p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Iconos de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+/* ========================= */
+/*  SECCIÓN CENTRAL - Servicios */
+/* ========================= */
+
+.footer-center h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* ========================= */
+/*  SECCIÓN DERECHA - Contacto */
+/* ========================= */
+.footer-right {
+    max-width: 30%;
+    text-align: left;
+}
+
+.footer-right h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer-right p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* ========================= */
+/*  SECCIÓN INFERIOR - LOGOS */
+/* ========================= */
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.footer-logos img {
+    width: 100px;
+    height: auto;
+    filter: brightness(0.8); /* Reduce un poco la intensidad */
+    transition: transform 0.3s ease;
+}
+
+.footer-logos img:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+/* ========================= */
+/*  TEXTO DE COPYRIGHT */
+/* ========================= */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 1rem;
+    opacity: 0.8;
 }

@@ -13,11 +13,11 @@
 .claudio-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    max-width: 1200px;
-    width: 100%;
+    justify-content: flex-end;
+    max-width: 1400px;
+    width: 90%;
     gap: 40px; /* Espacio entre imagen y texto */
-    flex-direction: row; /* Asegura que la imagen esté a la izquierda */
+    margin: 30 auto;
 }
 
 /* Contenedor de imagen */
@@ -25,12 +25,14 @@
     flex: 1;
     display: flex;
     justify-content: flex-start; /*  Asegura que la imagen esté alineada a la izquierda */
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .image-container img {
     width: 100%;
-    max-width: 500px; /*  Asegura que la imagen sea más grande */
+    height: 100%;
+    max-width: 600px; /*  Asegura que la imagen sea más grande */
+    border-radius: 10%;
     border-radius: 10px;
     object-fit: cover;
     filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.2));
@@ -39,8 +41,9 @@
 /*  Contenedor de texto */
 .text-content {
     flex: 2;
-    padding-left: 40px;
-    text-align: left;
+    margin-right: 0;
+    padding-left: 10px;
+    text-align: center;
 }
 
 .text-content h1 {

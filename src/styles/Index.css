@@ -11,6 +11,9 @@
 
 html, body {
   font-size: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   overflow-x: hidden; /* 🔹 Evita el scroll horizontal */
   font-family: "Lora", serif; /* 🔹 Aplica Lora en toda la web */
@@ -18,18 +21,18 @@ html, body {
   color: var(--text-color);
 }
 
-/* 🔹 Enlaces generales */
+/*  Enlaces generales */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* 🔹 Listas */
+/*  Listas */
 ul {
   list-style: none;
 }
 
-/* 🔹 Botones */
+/*  Botones */
 button, .btn, .navbar, .menu, .footer {
   font-family: "Poppins", sans-serif; /*  Mantiene Poppins en elementos específicos */
   cursor: pointer;
@@ -50,19 +53,19 @@ button, .btn, .navbar, .menu, .footer {
   --light-gray: #eef2f3;
 }
 
-/* 🔹 Contenedor principal */
+/*  Contenedor principal */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* 🔹 Estilos específicos para los textos */
+/*  Estilos específicos para los textos */
 p, h1, h2, h3, h4, h5, h6 {
   font-family: "Lora", serif;
 }
 
-/* 🔹 Ajustes generales */
+/*  Ajustes generales */
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -82,7 +85,7 @@ p {
 }
 
 /* ========================= */
-/* 📱 RESPONSIVIDAD */
+/*  RESPONSIVIDAD */
 /* ========================= */
 @media (max-width: 768px) {
   html {

@@ -1,80 +1,56 @@
 /* ===================== */
-/* HEADER CON EFECTO DE ENTRADA */
+/* HEADER Y NAVBAR */
 /* ===================== */
 .main-header {
   background-color: #004d73;
   padding: 15px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease;
-  overflow: hidden; /* 🔹 Evita que el contenido sobresalga */
-
-  /* 🔹 Agregamos la animación */
-  animation: slideDown 1s ease-in-out;
 }
 
-/* Definimos la animación */
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Sticky Header */
 .main-header.sticky {
   background-color: rgba(0, 77, 115, 0.9);
 }
 
-/* ===================== */
-/* LOGO */
-/* ===================== */
-.logo-img {
-  width: clamp(80px, 10vw, 120px);
-  border-radius: 50%;
-  object-fit: contain;
-  aspect-ratio: 1 / 1;
-  display: block;
-  background-color: white;
-  padding: 5px;
-}
-
-/* ===================== */
-/* MENÚ */
-/* ===================== */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* 🔹 Cambiado de `max-width: 1200px;` a `width: 100%` */
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
-  overflow: hidden; /* 🔹 Evita que los elementos causen desbordamiento */
 }
 
+/* Logo */
+.logo {
+  flex-shrink: 0;
+}
+
+.logo-img {
+  width: clamp(80px, 10vw, 120px); /* Tamaño adaptable */
+  height: auto;
+  border-radius: 50%; /* Hace el logo redondo */
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+  background-color: white; /* Fondo blanco para contraste */
+  padding: 5px; /* Espacio alrededor */
+}
+
+/* ===================== */
+/* MENÚ PRINCIPAL */
+/* ===================== */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* 🔹 Evita que los elementos se salgan del viewport */
-}
-
-.nav-links li {
-  position: relative;
-}
-
-.dropdown-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-links a {
@@ -84,6 +60,7 @@
   font-weight: bold;
   padding: 10px;
   display: block;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -93,12 +70,15 @@
 /* ===================== */
 /* MENÚ DESPLEGABLE */
 /* ===================== */
+.dropdown {
+  position: relative;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -114,8 +94,6 @@
 
 .dropdown-menu a {
   color: black;
-  font-size: 0.95rem;
-  font-weight: 500;
   padding: 8px 15px;
   display: block;
   transition: background-color 0.3s ease;
@@ -126,12 +104,13 @@
 }
 
 /* Mostrar dropdown en escritorio al pasar el ratón */
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu,
+.dropdown.active .dropdown-menu {
   display: block;
 }
 
 /* ===================== */
-/* OCULTAR BOTÓN HAMBURGUESA EN ESCRITORIO */
+/* MENÚ MÓVIL */
 /* ===================== */
 .menu-toggle {
   display: none;
@@ -142,9 +121,6 @@
   cursor: pointer;
 }
 
-/* ===================== */
-/* MENÚ MÓVIL */
-/* ===================== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -153,10 +129,10 @@
   .nav-links {
     display: none;
     flex-direction: column;
-    position: fixed; /* 🔹 Cambiado de `absolute` a `fixed` */
+    position: fixed;
     top: 60px;
     left: 0;
-    width: 100vw; /* 🔹 Se asegura de no causar scroll horizontal */
+    width: 100vw;
     background-color: #004d73;
     padding: 15px;
     text-align: center;
@@ -167,29 +143,14 @@
     display: flex;
   }
 
-  .nav-links li {
-    padding: 10px 0;
-  }
-
-  /* Menú desplegable en móvil */
   .dropdown-menu {
     display: none;
     background-color: #004d73;
     position: static;
-    box-shadow: none;
     text-align: center;
   }
 
   .dropdown.active .dropdown-menu {
     display: block;
-  }
-
-  .dropdown-menu a {
-    color: white;
-    padding: 10px;
-  }
-
-  .dropdown-menu a:hover {
-    background-color: #00334e;
   }
 }

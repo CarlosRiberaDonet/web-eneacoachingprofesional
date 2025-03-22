@@ -102,15 +102,11 @@
 }
 
 .footer-logos img {
-    width: 100px;
-    height: auto;
-    filter: brightness(0.8); /* Reduce un poco la intensidad */
-    transition: transform 0.3s ease;
-}
-
-.footer-logos img:hover {
-    transform: scale(1.1);
-    filter: brightness(1);
+    width: 120px; /* Puedes ajustar el tamaño según necesites */
+    height: 120px;
+    border-radius: 50%; /*  Hace la imagen redonda */
+    object-fit: cover; /* Asegura que la imagen se ajuste al círculo */
+    margin: 5px;
 }
 
 /* ========================= */

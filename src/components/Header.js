@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // Usar Link en lugar de <a>
+import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
 
-  // Función para alternar el menú en móviles
+  // Alternar menú en móviles
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Función para manejar el scroll y agregar la clase sticky
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
+  // Alternar dropdowns
+  const toggleDropdown = (menu) => {
+    setActiveDropdown(activeDropdown === menu ? null : menu);
   };
 
+  // Manejar el scroll para hacer el header sticky
   useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 50);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -42,44 +44,47 @@ const Header = () => {
 
         {/* Menú de navegación */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-
+          
           {/* Dropdown Eneagrama */}
-          <li className="dropdown">
-            <Link to="#">Eneagrama ▾</Link>
+          <li className={`dropdown ${activeDropdown === "eneagrama" ? "active" : ""}`}>
+            <Link to="#" onClick={() => toggleDropdown("eneagrama")}>Eneagrama ▾</Link>
             <ul className="dropdown-menu">
               <li><Link to="#">¿Qué es?</Link></li>
               <li><Link to="#">¿Para qué sirve?</Link></li>
-              <li><Link to="#">Los tipos de personalidad</Link></li>
-              <li><Link to="#">Curso básico de eneagrama</Link></li>
-              <li><Link to="#">Otros talleres/Cursos</Link></li>
+              <li><Link to="#">Los 9 tipos de personalidad</Link></li>
+              <li><Link to="#">Curso básico eneagrama</Link></li>
+              <li><Link to="#">Eneagrama para empresas</Link></li>
+              <li><Link to="#">Otras aplicaciones</Link></li>
             </ul>
           </li>
 
           {/* Dropdown Coaching */}
-          <li className="dropdown">
-            <Link to="#">Coaching ▾</Link>
+          <li className={`dropdown ${activeDropdown === "coaching" ? "active" : ""}`}>
+            <Link to="#" onClick={() => toggleDropdown("coaching")}>Coaching ▾</Link>
             <ul className="dropdown-menu">
               <li><Link to="#">¿Qué es?</Link></li>
               <li><Link to="#">¿Para qué sirve?</Link></li>
-              <li><Link to="#">Sesiones Individuales</Link></li>
+              <li><Link to="#">Sesiones individuales</Link></li>
               <li><Link to="#">Coaching para empresas</Link></li>
-              <li><Link to="#">Talleres/Cursos</Link></li>
+              <li><Link to="#">Otras aplicaciones</Link></li>
             </ul>
           </li>
 
-          {/* Dropdown Eneacoaching */}
-          <li className="dropdown">
-            <Link to="#">EneaCoaching ▾</Link>
+          {/* Dropdown EneaCoaching */}
+          <li className={`dropdown ${activeDropdown === "eneacoaching" ? "active" : ""}`}>
+            <Link to="#" onClick={() => toggleDropdown("eneacoaching")}>EneaCoaching ▾</Link>
             <ul className="dropdown-menu">
               <li><Link to="#">¿Qué es?</Link></li>
               <li><Link to="#">¿Para qué sirve?</Link></li>
               <li><Link to="#">EneaCoaching Profesional</Link></li>
               <li><Link to="#">EneaCoaching Esencial</Link></li>
+              <li><Link to="#">EneaCoaching para parejas</Link></li>
             </ul>
           </li>
+
           <li><Link to="/sobre-mi">Sobre mí</Link></li>
-          <li><Link to="#">Testimonios</Link></li>
-          <li><Link to="/contacto">Blog</Link></li>
+          <li><Link to="/testimonios">Testimonios</Link></li>
+          <li><Link to="/Blog">Blog</Link></li>
           <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </nav>

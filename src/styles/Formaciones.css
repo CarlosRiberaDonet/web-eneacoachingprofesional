@@ -7,7 +7,7 @@
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/*  Definimos la animación fadeIn */
+/* Definimos la animación fadeIn */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -29,19 +29,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /*  Espaciado entre tarjetas */
-  padding: 40px, 5px;
+  gap: 20px;
+  padding: 40px 5px;
   flex-wrap: wrap;
-  max-width: 1800px; /*  Controla el ancho */
+  max-width: 1800px;
   margin: 0 auto;
 }
 
 /* Tarjetas individuales */
 .formacion-card {
   background: white;
-  width: 800px; /*  Permite que quepan 3 tarjetas en una fila */
-  height: 800px;
-  flex-direction: row;
   border-radius: 12px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
   text-align: left;
@@ -49,33 +46,20 @@
   align-items: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: clamp(320px, 30vw, 500px); /* 🔹 Se adapta a cualquier pantalla */
+  height: 250px;
 }
 
-/*  Efecto hover refinado */
+/* Efecto hover refinado */
 .formacion-card:hover {
-  transform: translateY(-8px); /* 🔹 Movimiento más fluido */
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2); /* 🔹 Sombra más elegante */
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-
-/* Imagen dentro de la tarjeta */
-.formacion-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
-  text-align: left;
-  width: 500px; 
-  height: 250px; 
-  display: flex; /*  Asegura que la imagen y el texto estén en fila */
-  align-items: center;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Contenedor de información */
 .formacion-info {
-  flex: 1; /*  Ocupa el resto del espacio */
+  flex: 1;
   padding: 15px 20px;
 }
 
@@ -84,16 +68,14 @@
   font-size: 1.1rem;
   margin-bottom: 5px;
   color: #CFB53B;
-  font-weight: 600;
-  letter-spacing: 0.5px;
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 /* Fechas */
 .formacion-info p {
   font-size: 0.9rem;
   color: #000000;
-  font-weight: 600;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -109,15 +91,15 @@
 /* Botón "Ver más" */
 .btn-ver-mas {
   display: inline-block;
-  padding: 12px 18px; /*  Más relleno para mejor apariencia */
-  background: linear-gradient(to right, #004d73, #006d94); /*  Degradado dorado */
+  padding: 12px 18px;
+  background: linear-gradient(to right, #004d73, #006d94);
   color: white;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 8px; /*  Bordes redondeados */
+  border-radius: 8px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /*  Sombra sutil */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border: none;
   cursor: pointer;
   text-align: center;
@@ -127,13 +109,13 @@
 }
 
 .btn-ver-mas:hover {
-  background: linear-gradient(to right, #006d94, #0081b5); /*  Más brillante en hover */
-  transform: translateY(-2px); /* 🔹 Efecto flotante */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /*  Más sombra para resaltar */
+  background: linear-gradient(to right, #006d94, #0081b5);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* ===================== */
-/* 📱 RESPONSIVE (Móviles) */
+/*  RESPONSIVE (Móviles) */
 /* ===================== */
 @media (max-width: 768px) {
   .formaciones-container {
@@ -143,15 +125,14 @@
 
   .formacion-card {
     display: flex;
-    align-items: stretch; /* Estira los elementos al alto de la tarjeta */
-    width: 500px; /* Ajusta según tu diseño */
-    height: 250px; /* Ajusta según tu diseño */
-    overflow: hidden;
+    align-items: stretch;
+    width: 90%; /* 🔹 Se adapta al ancho del móvil */
+    height: auto;
+    flex-direction: column;
   }
-  
 
   .formacion-card img {
-    width: 100%; /* 🔹 Hace que la imagen ocupe toda la parte superior */
+    width: 100%;
     height: auto;
     border-radius: 12px 12px 0 0;
   }
@@ -159,5 +140,20 @@
   .formacion-info {
     padding: 15px;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .formacion-card {
+    width: 95%;
+  }
+
+  .formacion-info h3 {
+    font-size: 1rem;
+  }
+
+  .btn-ver-mas {
+    padding: 10px 15px;
+    font-size: 0.9rem;
   }
 }

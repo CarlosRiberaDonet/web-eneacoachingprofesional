@@ -11,12 +11,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 🔹 Asegura que todos los textos usen Lora */
+/*  Asegura que todos los textos usen Lora */
 h1, h2, h3, h4, h5, h6, p, a, span, div, input, textarea, button, label {
   font-family: 'Lora', serif !important;
 }
 
-/* 🔹 Elimina la fuente en `code` para que no afecte otros elementos */
+/*  Elimina la fuente en `code` para que no afecte otros elementos */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

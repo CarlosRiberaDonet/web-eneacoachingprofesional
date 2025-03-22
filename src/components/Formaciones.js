@@ -9,21 +9,18 @@ const formacionesData = [
     imagen: coaching,
     titulo: "ENEACOACHING PROFESIONAL",
     descripcion: "Conecta con tu esencia y con tu propósito profesional a través del Eneagrama y del Coaching Ontológico",
-    fecha: "7 de mayo",
     link: "#",
   },
   {
     imagen: eneacoaching,
     titulo: "ENEACOACHING PARA EMPRESAS",
     descripcion: "Conecta con tu máximo potencial en tu empresa y alinea tus creencias, valores y fortalezas con tu equipo de trabajo",
-    fecha: "10 de septiembre",
     link: "#",
   },
   {
     imagen: eneagrama,
     titulo: "CURSO BÁSICO EN ENEAGRAMA",
     descripcion: "iníciate en esta apasionante herramienta de autoconocimiento y desarrollo personal para conectar con tu máximo potencial",
-    fecha: "15 de Octubre",
     link: "#",
   },
 ];

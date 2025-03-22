@@ -6,6 +6,8 @@ import SobreMi from"./SobreMi";
 import Typing from "./Typing";
 import Claudio from "./Claudio";
 import Contacto from "./Contacto";
+import EneaCoachingProfesional from "./EneaCoachingProfesional";
+
 
 const Home = () => {
   return (
@@ -19,13 +21,16 @@ const Home = () => {
       {/*  Sección con información profesional de Vicente */}
       <SobreMi />
 
+       {/*  Sección EneaCoachingProfesional */}
+       <EneaCoachingProfesional />
+
       {/*  Sección Typing */}
       <Typing />
 
       {/*  Sección personal de Sobre Mí */}
       <Claudio />
 
-      {/* 🔹 Formulario de Contacto */}
+      {/*  Formulario de Contacto */}
       <Contacto />
     </main>
   );

@@ -3,13 +3,13 @@
 /* ========================= */
 
 .home {
-  min-height: 60vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-size: cover;
-  background-position: center;
+  background-size: contain; /*  Evita que el fondo cubra el Header */
+  background-position: top;
   color: white;
 }
 

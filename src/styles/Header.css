@@ -11,12 +11,14 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(0, 77, 115, 1); /* Color original */
 }
 
-/* Sticky Header */
+/* Cambiar fondo cuando hace scroll */
 .main-header.sticky {
-  background-color: rgba(0, 77, 115, 0.9);
+  background-color: rgba(0, 77, 115, 0.7); /* Fondo ligeramente transparente */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Agregar sombra sutil */
 }
 
 /* Navbar */
@@ -47,8 +49,16 @@
 /* ===================== */
 /* MENÚ PRINCIPAL */
 /* ===================== */
+.nav-links,
+.dropdown-menu,
+.nav-links li,
+.dropdown-menu li {
+  list-style: none; /* Elimina los puntos de lista */
+  margin: 0;
+  padding: 0;
+}
+
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 20px;
 }
@@ -88,6 +98,7 @@
   text-align: left;
 }
 
+/* Elementos del menú desplegable */
 .dropdown-menu li {
   padding: 8px 15px;
 }

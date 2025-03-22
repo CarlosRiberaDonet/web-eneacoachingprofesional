@@ -38,7 +38,6 @@ const Footer = () => {
           <h3>Contacta</h3>
           <p>📧 hola@eneacoaching.es</p>
           <p>📞 +34 623 14 83 91</p>
-          <p>📍 dirección</p>
         </div>
       </div>
 

@@ -60,16 +60,17 @@
 /* Botón "Descubre más" */
 .btn-descubre-mas {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 18px;
+  margin-top: 25px;
+  padding: 14px 30px;
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(90deg, #004d73, #006d94);
-  border-radius: 8px;
+  background: linear-gradient(to right, #004d73, #006d94);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .btn-descubre-mas:hover {

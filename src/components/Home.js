@@ -7,6 +7,10 @@ import Typing from "./Typing";
 import Claudio from "./Claudio";
 import Contacto from "./Contacto";
 import EneaCoachingProfesional from "./EneaCoachingProfesional";
+import { Link } from "react-router-dom";
+
+<a href="/contacto" className="btn-contacto">Contacta</a>
+
 
 
 const Home = () => {

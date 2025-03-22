@@ -20,6 +20,7 @@ html, body {
   font-family: "Lora", serif;
   background-color: var(--background-light);
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
 /* ========================= */

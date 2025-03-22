@@ -6,16 +6,16 @@ const SocialBar = () => {
   return (
     <section className="social-bar">
       <div className="social-container">
-        {/* 🔹 Redes Sociales */}
+        {/*  Redes Sociales */}
         <div className="social-icons">
           <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="#" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
         </div>
-        {/* 🔹 Teléfono */}
+        {/*  Teléfono */}
         <div className="phone-number">
-          <a href="tel:+34623148391"> 696 667 110</a>
+        <a href="tel:+34696667110" className="phone-number">696 667 110</a>
         </div>
       </div>
     </section>

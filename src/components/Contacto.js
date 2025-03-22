@@ -3,10 +3,10 @@ import "../styles/Contacto.css";
 
 const Contacto = () => {
   return (
-    <section className="contacto">
+    <section id="contacto" className="contacto"> {/* Añadido id="contacto" */}
       <div className="contacto-container">
         
-        {/* 🔹 Información de contacto */}
+        {/* Información de contacto */}
         <div className="contacto-info">
           <h2>Contacto</h2>
           <p>
@@ -16,7 +16,7 @@ const Contacto = () => {
           <p><strong>WhatsApp:</strong> +34 696 667 110</p>
         </div>
 
-        {/*  Formulario */}
+        {/* Formulario */}
         <div className="contacto-form">
           <form>
             <input type="text" placeholder="Nombre" required />

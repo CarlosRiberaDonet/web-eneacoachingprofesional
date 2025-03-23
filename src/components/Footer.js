@@ -1,13 +1,15 @@
 import React from "react";
 import "../styles/Footer.css";
 import SocialBar from "./SocialBar";
+import '../styles/global/ButtonStyles.css';
+
 import { FaYoutube, FaInstagram, FaLinkedin, FaTiktok, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="main-footer">
       <div className="footer-container">
-        {/* 🔹 Sección Izquierda - Presentación */}
+        {/*  Sección Izquierda - Presentación */}
         <div className="footer-left">
          
           <h2>VICENTE MONTOLÍO IZQUIERDO</h2>
@@ -33,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* 🔹 Sección Derecha - Contacto */}
+        {/*  Sección Derecha - Contacto */}
         <div className="footer-right">
           <h3>Contacta</h3>
           <p>📧 hola@eneacoaching.es</p>
@@ -41,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* 🔹 Sección Inferior - Logos y Créditos */}
+      {/*  Sección Inferior - Logos y Créditos */}
       <div className="footer-logos">
         <img src="/images/logo.png" alt="eneacoavhingprofesional" />
         <img src="/images/curso.png" alt="International Eneagram Association" />

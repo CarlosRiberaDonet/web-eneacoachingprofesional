@@ -9,7 +9,7 @@
     font-family: "Lora", serif;
 }
 
-/* 🔹 Contenedor principal del Footer */
+/*  Contenedor principal del Footer */
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -37,7 +37,7 @@
     margin-bottom: 15px;
 }
 
-/* 🔹 Iconos de redes sociales */
+/*  Iconos de redes sociales */
 .social-icons {
     display: flex;
     gap: 15px;

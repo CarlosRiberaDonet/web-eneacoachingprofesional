@@ -3,6 +3,8 @@ import "../styles/Formaciones.css";
 import eneagrama from "../assets/images/eneagrama.png";
 import coaching from "../assets/images/coaching.png";
 import eneacoaching from "../assets/images/eneacoaching.png";
+import '../styles/global/ButtonStyles.css';
+
 
 const formacionesData = [
   {

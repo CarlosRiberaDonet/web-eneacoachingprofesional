@@ -6,7 +6,7 @@
 }
 body {
   margin: 0;
-  font-family: 'Lora', serif !important; /* 🔹 Aplica Lora a todo */
+  font-family: 'Lora', serif !important; /*  Aplica Lora a todo */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

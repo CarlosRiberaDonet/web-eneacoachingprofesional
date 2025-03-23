@@ -57,28 +57,6 @@
   line-height: 1.6;
 }
 
-/* Botón "Descubre más" */
-.btn-descubre-mas {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(to right, #004d73, #006d94);
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-descubre-mas:hover {
-  background: #ffc107;
-  color: black;
-  transform: scale(1.05);
-}
-
 /* Imagen centrada bajo el botón */
 .image-container {
   display: flex;

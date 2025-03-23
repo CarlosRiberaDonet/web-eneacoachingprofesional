@@ -1,0 +1,46 @@
+/* ========================= */
+/*  Sección "Curso Básico de Eneagrama" */
+/* ========================= */
+.curso-basico-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.curso-basico-container h2 {
+    font-size: 2.6rem;
+    color: #004d73;
+    margin-bottom: 20px;
+}
+
+.curso-basico-container h3 {
+    font-size: 2rem;
+    color: #006d94;
+    margin: 20px 0;
+}
+
+.curso-basico-container p {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.curso-basico-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.curso-basico-container ul li {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+}
+

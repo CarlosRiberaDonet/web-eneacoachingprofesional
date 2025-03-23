@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #004d73, #006d94); /*  Azul corporativo con degradado */
+    border: none;
+    border-radius: 50px; /*  Bordes más suaves */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #ffc107, #ff9800); /*  Cambio de color a dorado */
+    color: black;
+    transform: scale(1.07); /*  Efecto de crecimiento más sutil */
+  }

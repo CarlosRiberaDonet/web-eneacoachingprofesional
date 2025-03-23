@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "../styles/Header.css";
+import '../styles/global/ButtonStyles.css';
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,6 +20,12 @@ const Header = () => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
   };
 
+  // Cerrar el menú después de hacer clic en un enlace
+  const handleLinkClick = () => {
+    setActiveDropdown(null);
+    setMenuOpen(false);
+  };
+
   // Manejar el scroll para hacer el header sticky
   useEffect(() => {
     const handleScroll = () => {
@@ -27,12 +36,24 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Cerrar el desplegable al hacer clic fuera del menú
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".navbar") && !event.target.closest(".menu-toggle")) {
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
     <header className={`main-header ${isSticky ? "sticky" : ""}`}>
       <nav className="navbar">
         {/* Logo */}
         <div className="logo">
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             <img src="/images/logo.png" alt="Logo Eneacoaching" className="logo-img" />
           </Link>
         </div>
@@ -44,17 +65,17 @@ const Header = () => {
 
         {/* Menú de navegación */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          
+
           {/* Dropdown Eneagrama */}
           <li className={`dropdown ${activeDropdown === "eneagrama" ? "active" : ""}`}>
-            <Link to="#" onClick={() => toggleDropdown("eneagrama")}>Eneagrama ▾</Link>
+            <Link to="/eneagrama" onClick={() => toggleDropdown("eneagrama")}>Eneagrama ▾</Link>
             <ul className="dropdown-menu">
-              <li><Link to="#">¿Qué es?</Link></li>
-              <li><Link to="#">¿Para qué sirve?</Link></li>
-              <li><Link to="#">Los 9 tipos de personalidad</Link></li>
-              <li><Link to="#">Curso básico eneagrama</Link></li>
-              <li><Link to="#">Eneagrama para empresas</Link></li>
-              <li><Link to="#">Otras aplicaciones</Link></li>
+              <li><HashLink smooth to="/eneagrama#que-es" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
+              <li><HashLink smooth to="/eneagrama#para-que-sirve" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
+              <li><HashLink smooth to="/eneagrama#tipos-eneagrama" onClick={handleLinkClick}>Los 9 tipos de personalidad</HashLink></li>
+              <li><HashLink smooth to="/curso#curso-basico" onClick={handleLinkClick}>Curso básico eneagrama</HashLink></li>
+              <li><HashLink smooth to="/curso#empresas" onClick={handleLinkClick}>Eneagrama para empresas</HashLink></li>
+              <li><HashLink smooth to="/curso#otras-aplicaciones" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>
             </ul>
           </li>
 
@@ -62,11 +83,11 @@ const Header = () => {
           <li className={`dropdown ${activeDropdown === "coaching" ? "active" : ""}`}>
             <Link to="#" onClick={() => toggleDropdown("coaching")}>Coaching ▾</Link>
             <ul className="dropdown-menu">
-              <li><Link to="#">¿Qué es?</Link></li>
-              <li><Link to="#">¿Para qué sirve?</Link></li>
-              <li><Link to="#">Sesiones individuales</Link></li>
-              <li><Link to="#">Coaching para empresas</Link></li>
-              <li><Link to="#">Otras aplicaciones</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>¿Qué es?</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>¿Para qué sirve?</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>Sesiones individuales</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>Coaching para empresas</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>Otras aplicaciones</Link></li>
             </ul>
           </li>
 
@@ -74,18 +95,16 @@ const Header = () => {
           <li className={`dropdown ${activeDropdown === "eneacoaching" ? "active" : ""}`}>
             <Link to="#" onClick={() => toggleDropdown("eneacoaching")}>EneaCoaching ▾</Link>
             <ul className="dropdown-menu">
-              <li><Link to="#">¿Qué es?</Link></li>
-              <li><Link to="#">¿Para qué sirve?</Link></li>
-              <li><Link to="#">EneaCoaching Profesional</Link></li>
-              <li><Link to="#">EneaCoaching Esencial</Link></li>
-              <li><Link to="#">EneaCoaching para parejas</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>¿Qué es?</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>¿Para qué sirve?</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>EneaCoaching Profesional</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>EneaCoaching Esencial</Link></li>
+              <li><Link to="#" onClick={handleLinkClick}>EneaCoaching para parejas</Link></li>
             </ul>
           </li>
 
-          <li><Link to="/sobre-mi">Sobre mí</Link></li>
-          <li><Link to="/testimonios">Testimonios</Link></li>
-          <li><Link to="/Blog">Blog</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li>
+          <Link to="/vicente" onClick={handleLinkClick}>Sobre mí</Link>
+          <Link to="/contacto" onClick={handleLinkClick}>Contacto</Link>
         </ul>
       </nav>
     </header>
@@ -93,3 +112,4 @@ const Header = () => {
 };
 
 export default Header;
+

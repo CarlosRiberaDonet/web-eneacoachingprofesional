@@ -1,0 +1,122 @@
+/* ========================= */
+/*  Sección "Tipos de Eneatipos" */
+/* ========================= */
+.tipos-eneagrama-container {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título principal */
+.tipos-eneagrama-container h2 {
+    font-size: 2.4rem;
+    color: #004d73;
+    margin-bottom: 20px;
+}
+
+/* Subtítulos generales */
+.tipos-eneagrama-container h3 {
+    font-size: 1.8rem;
+    color: #006d94;
+    margin: 25px 0;
+}
+
+/* Títulos de los eneatipos */
+.tipos-eneagrama-container h4 {
+    font-size: 1.6rem;
+    color: #004d73;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Párrafos generales */
+.tipos-eneagrama-container p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Bloque de cada eneatipo */
+.eneatipo {
+    margin: 20px 0;
+    text-align: left;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f4f7f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eneatipo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================= */
+/*  Imagen del Eneagrama */
+/* ========================= */
+.image-container {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.eneagrama2-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}
+
+/* ========================= */
+/*  Responsive Design */
+/* ========================= */
+@media (max-width: 1200px) {
+    .tipos-eneagrama-container {
+        padding: 30px;
+    }
+
+    .tipos-eneagrama-container h2 {
+        font-size: 2rem;
+    }
+
+    .tipos-eneagrama-container h3,
+    .tipos-eneagrama-container h4 {
+        font-size: 1.6rem;
+    }
+
+    .tipos-eneagrama-container p {
+        font-size: 1.2rem;
+    }
+
+    .eneatipo {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tipos-eneagrama-container {
+        padding: 20px;
+    }
+
+    .tipos-eneagrama-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .tipos-eneagrama-container h3,
+    .tipos-eneagrama-container h4 {
+        font-size: 1.4rem;
+    }
+
+    .tipos-eneagrama-container p {
+        font-size: 1.1rem;
+    }
+
+    .eneagrama2-image {
+        max-width: 100%;
+    }
+}

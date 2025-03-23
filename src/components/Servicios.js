@@ -1,5 +1,9 @@
 import React from "react";
-import "../styles/Typing.css"; // Importamos los estilos
+import "../styles/Typing.css";
+import '../../../styles/global/ButtonStyles.css';
+import '../styles/global/ButtonStyles.css';
+
+
 
 const Typing = () => {
   return (
@@ -17,7 +21,7 @@ const Typing = () => {
           de un hermoso camino de transformación personal en el que puedo ayudarte a sacar 
           tu máximo potencial.
         </p>
-        <a href="/consulta" className="btn-typing">CONSULTA UNA SESIÓN GRATUITA</a>
+        <a href="/consulta" className="btn">CONSULTA UNA SESIÓN GRATUITA</a>
       </div>
     </section>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import "../styles/SocialBar.css"; // Importamos los estilos
-
+import "../styles/SocialBar.css";
 const SocialBar = () => {
   return (
     <section className="social-bar">

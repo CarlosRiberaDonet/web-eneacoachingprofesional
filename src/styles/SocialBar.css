@@ -9,11 +9,11 @@
   align-items: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   
-  /* 🔹 Agregamos la animación */
+  /*  Agregamos la animación */
   animation: slideDown 1.2s ease-in-out;
 }
 
-/* 🔹 Efecto de entrada */
+/*  Efecto de entrada */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -25,47 +25,47 @@
   }
 }
 
-/* 🔹 Contenedor de iconos y teléfono */
+/*  Contenedor de iconos y teléfono */
 .social-container {
   display: flex;
-  justify-content: flex-end; /* 🔹 Alinea iconos y teléfono a la derecha */
+  justify-content: flex-end; /*  Alinea iconos y teléfono a la derecha */
   align-items: center;
-  gap: 20px; /* 🔹 Espaciado entre iconos y teléfono */
+  gap: 20px; /*  Espaciado entre iconos y teléfono */
   padding: 5px 20px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* 🔹 Ajuste para los iconos */
+/*  Ajuste para los iconos */
 .social-icons {
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-/* 🔹 Estilos de los íconos */
+/*  Estilos de los íconos */
 .social-icons a {
-  color: #004d73; /* 🔹 Azul oscuro */
+  color: #004d73 !important; /*  Azul oscuro con importancia */
   font-size: 1.5rem;
   transition: transform 0.2s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
   transform: scale(1.2);
-  color: #ffc107; /* 🔹 Color dorado al hacer hover */
+  color: #ffc107 !important; /*  Color dorado al hacer hover con importancia */
 }
 
-/* 🔹 Estilos para el teléfono */
+/*  Estilos para el teléfono */
 .phone-number {
   font-size: 1rem;
   font-weight: bold;
-  color: #004d73; /* 🔹 Azul oscuro */
+  color: #004d73; /*  Azul oscuro */
   display: flex;
   align-items: center;
 }
 
-/* 🔹 Enlace del número de teléfono */
+/*  Enlace del número de teléfono */
 .phone-number a {
   color: #004d73;
   font-size: 1.2rem;
@@ -77,10 +77,10 @@
   color: #ffc107;
 }
 
-/* 🔹 Asegurar buena alineación en dispositivos móviles */
+/*  Asegurar buena alineación en dispositivos móviles */
 @media (max-width: 768px) {
   .social-container {
-    flex-direction: column;  /* 🔹 Pone iconos y teléfono en columna */
+    flex-direction: column;  /*  Pone iconos y teléfono en columna */
     text-align: center;
     gap: 10px;
   }

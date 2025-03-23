@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Typing.css";
+import '../styles/global/ButtonStyles.css';
+
 
 const Typing = () => {
   return (

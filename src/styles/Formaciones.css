@@ -47,7 +47,7 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: clamp(320px, 30vw, 500px); /* 🔹 Se adapta a cualquier pantalla */
-  height: 250px;
+  height: 280px; /* Ajustado para mantener el diseño consistente */
 }
 
 /* Efecto hover refinado */
@@ -61,6 +61,9 @@
 .formacion-info {
   flex: 1;
   padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Títulos dentro de las tarjetas */
@@ -131,11 +134,13 @@
     flex-direction: column;
   }
 
-  .formacion-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px 12px 0 0;
-  }
+/* Aseguramos que las imágenes tengan el mismo tamaño y no se deformen */
+.formacion-card img {
+  width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+  height: 200px; /* Establecemos una altura fija */
+  object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente */
+  border-radius: 12px 12px 0 0; /* Bordes redondeados en la parte superior */
+}
 
   .formacion-info {
     padding: 15px;

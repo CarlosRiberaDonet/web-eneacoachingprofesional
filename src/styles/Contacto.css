@@ -71,7 +71,7 @@
 }
 
 
-/* 🔹 Aumentamos la separación entre los placeholders */
+/*  Aumentamos la separación entre los placeholders */
 .contacto-form input:not(:last-child),
 .contacto-form textarea {
   margin-bottom: 15px;
@@ -90,30 +90,7 @@
   color: #999; /*  Suaviza el color del placeholder */
 }
 
-/*  Botón de Enviar */
-  .btn-enviar {
-    display: block; /* 🔹 Asegura que ocupe toda la línea */
-    margin: 0 auto; /* 🔹 Lo centra dentro del contenedor */
-    padding: 14px 22px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(to right, #004d73, #006d94);
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-  }
-  
 
-.btn-enviar:hover {
-  background: linear-gradient(to right, #ffc107, #ff9800);
-  color: black;
-  transform: translateY(-3px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
 
 /* ========================= */
 /*   RESPONSIVE (Móviles) */

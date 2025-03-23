@@ -1,0 +1,44 @@
+/* ========================= */
+/*  Sección "Eneagrama para Empresas" */
+/* ========================= */
+.section-container {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-container h2 {
+    font-size: 2.4rem;
+    color: #004d73;
+    margin-bottom: 15px;
+}
+
+.section-container h3 {
+    font-size: 1.8rem;
+    color: #006d94;
+    margin: 20px 0;
+}
+
+.section-container p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.section-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.section-container ul li {
+    font-size: 1.3rem;
+    margin: 8px 0;
+    padding-left: 20px;
+    text-align: left;
+}

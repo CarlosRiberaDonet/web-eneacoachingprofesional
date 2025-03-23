@@ -1,5 +1,5 @@
 /* =============================== */
-/* 🔹 SECCIÓN TYPING 🔹 */
+/*  SECCIÓN TYPING  */
 /* =============================== */
 .typing {
   background: linear-gradient(to right, #ffffff, #f7f9fc); /*  Blanco suave con gris azulado */
@@ -22,7 +22,7 @@
   font-weight: bold;
   color: #004d73;
   margin-bottom: 20px;
-  text-transform: uppercase; /* 🔹 Da más impacto al título */
+  text-transform: uppercase; /*  Da más impacto al título */
 }
 
 /* Texto */
@@ -43,7 +43,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(to right, #004d73, #006d94); /* 🔹 Azul corporativo con degradado */
+  background: linear-gradient(to right, #004d73, #006d94); /*  Azul corporativo con degradado */
   border: none;
   border-radius: 50px; /* 🔹 Bordes más suaves */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -52,13 +52,13 @@
 }
 
 .btn-sesion:hover {
-  background: linear-gradient(to right, #ffc107, #ff9800); /* 🔹 Cambio de color a dorado */
+  background: linear-gradient(to right, #ffc107, #ff9800); /*  Cambio de color a dorado */
   color: black;
-  transform: scale(1.07); /* 🔹 Efecto de crecimiento más sutil */
+  transform: scale(1.07); /*  Efecto de crecimiento más sutil */
 }
 
 /* =============================== */
-/* 📱 RESPONSIVE (Móviles) */
+/*  RESPONSIVE (Móviles) */
 /* =============================== */
 @media (max-width: 768px) {
   .typing {

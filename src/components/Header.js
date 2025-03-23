@@ -73,33 +73,32 @@ const Header = () => {
               <li><HashLink smooth to="/eneagrama#que-es" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
               <li><HashLink smooth to="/eneagrama#para-que-sirve" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
               <li><HashLink smooth to="/eneagrama#tipos-eneagrama" onClick={handleLinkClick}>Los 9 tipos de personalidad</HashLink></li>
-              <li><HashLink smooth to="/curso#curso-basico" onClick={handleLinkClick}>Curso básico eneagrama</HashLink></li>
-              <li><HashLink smooth to="/curso#empresas" onClick={handleLinkClick}>Eneagrama para empresas</HashLink></li>
-              <li><HashLink smooth to="/curso#otras-aplicaciones" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>
+              <li><HashLink smooth to="/curso#curso-basico" onClick={handleLinkClick}>Curso básico de Eneagrama</HashLink></li>
+              <li><HashLink smooth to="/curso#eneagrama-empresas" onClick={handleLinkClick}>Eneagrama para empresas</HashLink></li>
+              <li><HashLink smooth to="/curso#otros" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>
             </ul>
           </li>
 
           {/* Dropdown Coaching */}
           <li className={`dropdown ${activeDropdown === "coaching" ? "active" : ""}`}>
-            <Link to="#" onClick={() => toggleDropdown("coaching")}>Coaching ▾</Link>
+            <Link to="/curso" onClick={() => toggleDropdown("coaching")}>Coaching ▾</Link>
             <ul className="dropdown-menu">
-              <li><Link to="#" onClick={handleLinkClick}>¿Qué es?</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>¿Para qué sirve?</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>Sesiones individuales</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>Coaching para empresas</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>Otras aplicaciones</Link></li>
+              <li><HashLink smooth to="/curso#curso-basico" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
+              <li><HashLink smooth to="/curso#eneagrama-empresas" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
+              <li><HashLink smooth to="/curso#sesiones-individuales" onClick={handleLinkClick}>Sesiones individuales</HashLink></li>
+              <li><HashLink smooth to="/curso#coaching-empresas" onClick={handleLinkClick}>Coaching para empresas</HashLink></li>
+              <li><HashLink smooth to="/curso#otros" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>
             </ul>
           </li>
-
           {/* Dropdown EneaCoaching */}
           <li className={`dropdown ${activeDropdown === "eneacoaching" ? "active" : ""}`}>
-            <Link to="#" onClick={() => toggleDropdown("eneacoaching")}>EneaCoaching ▾</Link>
+            <Link to="/curso" onClick={() => toggleDropdown("eneacoaching")}>EneaCoaching ▾</Link>
             <ul className="dropdown-menu">
-              <li><Link to="#" onClick={handleLinkClick}>¿Qué es?</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>¿Para qué sirve?</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>EneaCoaching Profesional</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>EneaCoaching Esencial</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>EneaCoaching para parejas</Link></li>
+              <li><HashLink smooth to="/curso#curso-basico" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
+              <li><HashLink smooth to="/curso#eneagrama-empresas" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
+              <li><HashLink smooth to="/curso#eneacoaching-profesional" onClick={handleLinkClick}>EneaCoaching Profesional</HashLink></li>
+              <li><HashLink smooth to="/curso#eneacoaching-esencial" onClick={handleLinkClick}>EneaCoaching Esencial</HashLink></li>
+              <li><HashLink smooth to="/curso#eneacoaching-parejas" onClick={handleLinkClick}>EneaCoaching para parejas</HashLink></li>
             </ul>
           </li>
 

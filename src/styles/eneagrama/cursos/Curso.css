@@ -1,0 +1,102 @@
+/* ===== Sección Curso Básico de Eneagrama ===== */
+.curso-basico {
+    background: linear-gradient(to right, #f9f9f9, #eef2f3);
+    padding: 60px 5%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.curso-basico h2 {
+    font-size: 2.5rem;
+    color: #004d73;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.curso-basico h3 {
+    font-size: 2rem;
+    color: #006d94;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.curso-basico p {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Lista del curso */
+.curso-basico .curso-lista {
+    list-style: none; /* Elimina los puntos */
+    padding: 0;
+    margin: 20px auto;
+    text-align: center; /* Centra el contenido de la lista */
+}
+
+.curso-basico .curso-lista li {
+    font-size: 1.4rem;
+    margin: 12px 0; /* Espaciado más cómodo */
+    padding: 8px 0;
+    text-align: center; /* Centrado del texto */
+    line-height: 1.5; /* Aumenta el espacio entre líneas */
+    display: block; /* Asegura que ocupe toda la línea */
+}
+
+/* Botón de acción */
+.curso-basico .btn {
+    font-size: 1.1rem;
+    margin-top: 25px;
+    padding: 14px 30px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #004d73, #006d94); /* Azul corporativo */
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.curso-basico .btn:hover {
+    background: linear-gradient(to right, #ffc107, #ff9800); /* Cambio de color a dorado */
+    color: black;
+    transform: scale(1.05);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .curso-basico {
+        padding: 30px 3%;
+    }
+
+    .curso-basico h2 {
+        font-size: 2rem;
+    }
+
+    .curso-basico h3 {
+        font-size: 1.6rem;
+    }
+
+    .curso-basico p {
+        font-size: 1.2rem;
+    }
+
+    .curso-basico .curso-lista li {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        text-align: center; /* Asegura que se vea bien en móvil */
+        word-wrap: break-word;
+        line-height: 1.4;
+    }
+
+    .curso-basico .btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+        margin: 20px auto;
+    }
+}

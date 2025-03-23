@@ -1,20 +1,19 @@
 import React from 'react';
-import '../../../styles/eneagrama/cursos/EneagramaEmpresas.css';
+import '../../../styles/eneagrama/cursos/Curso.css';
 import '../../../styles/global/ButtonStyles.css';
-
 
 const CursoBasico = () => {
     return (
-        <div className="section-container">
+        <div className="curso-basico">
             <h2>Curso Básico de Eneagrama</h2>
             <p>
                 Es una introducción estructurada para profundizar en esta poderosa herramienta de autoconocimiento y desarrollo personal. 
                 Su objetivo es ayudar a los participantes a comprender mejor su personalidad, patrones de comportamiento y motivaciones profundas, 
                 lo que facilita el crecimiento personal y la mejora en sus relaciones.
             </p>
-            
+
             <h3>Contenido del Curso</h3>
-            <ul>
+            <ul className="curso-lista">
                 <li><strong>Sesión 1:</strong> ¿Qué es y para qué sirve el Eneagrama</li>
                 <li><strong>Sesión 2:</strong> Los 3 Centros de Inteligencia</li>
                 <li><strong>Sesión 3:</strong> Los Eneatipos Emocionales</li>
@@ -33,9 +32,10 @@ const CursoBasico = () => {
                 implementarlo y al tiempo que dispongas.
             </p>
 
-            <div className="btn">
-                <a href="/contacto">Consultar</a>
-            </div>
+            {/* Botón de acción */}
+            <a href="/contacto" className="btn">
+            Consultar
+            </a>
         </div>
     );
 };

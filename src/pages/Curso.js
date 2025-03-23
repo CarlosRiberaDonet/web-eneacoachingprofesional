@@ -1,8 +1,9 @@
 import React from 'react';
 import CursoBasico from '../components/eneagrama/curso/CursoBasico';
 import EneagramaEmpresas from '../components/eneagrama/curso/EneagramaEmpresas';
-import '../styles/global/ButtonStyles.css';
+import Otros from '../components/eneagrama/curso/Otros';
 
+import '../styles/global/ButtonStyles.css';
 
 const Curso = () => {
     return (
@@ -12,6 +13,9 @@ const Curso = () => {
             </div>
             <div id='eneagrama-empresas'>
                 <EneagramaEmpresas />
+            </div>
+            <div id='otros'>
+                <Otros />
             </div>
         </div>
     );

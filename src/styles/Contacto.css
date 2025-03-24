@@ -19,8 +19,7 @@
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* 🔹 Alineamos el contenido al principio */
-  flex-direction: column; /* Asegura que el contenido en dispositivos móviles esté apilado */
+  align-items: center;
 }
 
 /*  Información de contacto */
@@ -31,7 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start; /*  Asegura que el texto no esté pegado al borde */
-  margin-bottom: 20px;
 }
 
 .contacto-info h2 {
@@ -55,8 +53,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: 100%; /*  Limitamos el ancho del formulario */ 
-  position: relative;
+  max-width: 300px; /*  Limitamos el ancho del formulario */ 
+  position: relative; left: -40px;
 }
 
 .contacto-form input,
@@ -71,6 +69,7 @@
   transition: all 0.3s ease-in-out;
   resize: none;
 }
+
 
 /*  Aumentamos la separación entre los placeholders */
 .contacto-form input:not(:last-child),
@@ -91,6 +90,8 @@
   color: #999; /*  Suaviza el color del placeholder */
 }
 
+
+
 /* ========================= */
 /*   RESPONSIVE (Móviles) */
 /* ========================= */
@@ -106,7 +107,6 @@
   .contacto-info {
     padding-right: 0;
     margin-bottom: 20px;
-    text-align: center;
   }
 
   .contacto-form {
@@ -117,11 +117,5 @@
     width: 100%;
     padding: 14px;
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .contacto-info p {
-    font-size: 0.9rem;
   }
 }

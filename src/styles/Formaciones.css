@@ -7,7 +7,7 @@
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Animación fadeIn */
+/* Definimos la animación fadeIn */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -46,11 +46,11 @@
   align-items: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: clamp(320px, 30vw, 500px); /* Se adapta a cualquier pantalla */
+  width: clamp(320px, 30vw, 500px); /* 🔹 Se adapta a cualquier pantalla */
   height: 280px; /* Ajustado para mantener el diseño consistente */
 }
 
-/* Efecto hover */
+/* Efecto hover refinado */
 .formacion-card:hover {
   transform: translateY(-8px);
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
@@ -73,6 +73,14 @@
   color: #CFB53B;
   font-weight: bold;
   letter-spacing: 0.5px;
+}
+
+/* Fechas */
+.formacion-info p {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* Descripción corta */
@@ -109,7 +117,9 @@
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== RESPONSIVE - Móviles ===== */
+/* ===================== */
+/*  RESPONSIVE (Móviles) */
+/* ===================== */
 @media (max-width: 768px) {
   .formaciones-container {
     flex-direction: column;
@@ -119,18 +129,18 @@
   .formacion-card {
     display: flex;
     align-items: stretch;
-    width: 90%; /* Se adapta al ancho del móvil */
+    width: 90%; /* 🔹 Se adapta al ancho del móvil */
     height: auto;
     flex-direction: column;
   }
 
-  /* Ajustamos las imágenes para que no se recorten */
-  .formacion-img {
-    width: 100%;
-    height: auto;
-    object-fit: contain; /* Cambié object-fit a contain para que no se recorte la imagen */
-    border-radius: 12px 12px 0 0; /* Bordes redondeados en la parte superior */
-  }
+/* Aseguramos que las imágenes tengan el mismo tamaño y no se deformen */
+.formacion-card img {
+  width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+  height: 200px; /* Establecemos una altura fija */
+  object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente */
+  border-radius: 12px 12px 0 0; /* Bordes redondeados en la parte superior */
+}
 
   .formacion-info {
     padding: 15px;

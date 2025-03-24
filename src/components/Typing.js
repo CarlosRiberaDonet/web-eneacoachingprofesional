@@ -20,7 +20,7 @@ const Typing = () => {
         </p>
 
         {/* Botón de acción */}
-        <a href="/consulta-gratuita" className="btn">
+        <a href="/consulta-gratuita" className="btn-sesion">
           Consulta una sesión gratuita
         </a>
 

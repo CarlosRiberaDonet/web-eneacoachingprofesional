@@ -5,6 +5,7 @@ import coaching from "../assets/images/coaching.png";
 import eneacoaching from "../assets/images/eneacoaching.png";
 import '../styles/global/ButtonStyles.css';
 
+
 const formacionesData = [
   {
     imagen: coaching,
@@ -33,10 +34,10 @@ const Formaciones = () => {
       <div className="formaciones-container">
         {formacionesData.map((formacion, index) => (
           <div key={index} className="formacion-card">
-            <img src={formacion.imagen} alt={formacion.titulo} className="formacion-img" />
+            <img src={formacion.imagen} alt={formacion.titulo} className="formacion-img"/>
             <div className="formacion-info">
               <h3>{formacion.titulo}</h3>
-              <p className="formacion-descripcion">{formacion.descripcion}</p> 
+              <p className="formacion-descripcion">{formacion.descripcion}</p>  {/*  Nueva línea con la descripción */}
               <p>{formacion.fecha}</p>
               <a href={formacion.link} className="btn-ver-mas">Ver más</a>
             </div>

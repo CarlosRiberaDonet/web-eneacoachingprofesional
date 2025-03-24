@@ -3,6 +3,8 @@ import "../styles/SobreMi.css";
 import vicente from "../assets/images/vicente.png";
 import '../styles/global/ButtonStyles.css';
 
+
+
 const SobreMi = () => {
   return (
     <section className="sobre-mi">

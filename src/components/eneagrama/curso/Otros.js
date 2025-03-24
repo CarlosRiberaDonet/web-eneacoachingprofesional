@@ -1,27 +1,47 @@
 import React from 'react';
-import '../../../styles/eneagrama/cursos/Curso.css';
-import '../../../styles/global/ButtonStyles.css';
+import '../styles/Seccion1.css';
 
-const Otros = () => {
+const Seccion1 = () => {
     return (
-        <div className="curso-basico">
-            <h2>Otras Aplicaciones</h2>
+        <div className="seccion1-container">
+            <h2>¿Qué es el Eneagrama?</h2>
             <p>
-                Como hemos visto, el Eneagrama se puede aplicar en distintos ámbitos y puedo asegurar que en todos ellos se obtienen resultados sorprendentemente óptimos.
-                Como pedagogo y experto en procesos de enseñanza/aprendizaje tengo también un programa sobre <strong>ENEAGRAMA EN EDUCACIÓN</strong>, un ámbito donde el Eneagrama ayuda a estudiantes y docentes a identificar sus estilos de aprendizaje, mejorar la enseñanza y adaptar metodologías para un aprendizaje más efectivo y significativo.
+                El Eneagrama de la Personalidad es mucho más que un sistema de clasificación psicológica: es un mapa de autoconocimiento y transformación personal.
+                Describe nueve tipos de carácter, cada uno con su propia forma de pensar, sentir e interpretar el mundo, así como sus motivaciones, miedos y patrones
+                de comportamiento específicos.
+            </p>
+
+            <h3>🧠 Comprender la personalidad desde una visión integradora</h3>
+            <p>
+                El Eneagrama no solo nos ayuda a identificar quiénes somos, sino que también nos permite comprender la neurosis y el desarrollo de la personalidad
+                desde una perspectiva profunda. Cada eneatipo está vinculado a:
+            </p>
+            <ul>
+                <li>🔹 Una pasión dominante, que representa una emoción central en nuestra forma de ser.</li>
+                <li>🔹 Una fijación cognitiva, que influye en nuestra percepción de la realidad.</li>
+            </ul>
+
+            <p>
+                Reconocer estos patrones nos ayuda a identificar las estrategias defensivas del ego y cómo afectan nuestra relación con nosotros mismos,
+                con los demás y con el mundo.
+            </p>
+
+            <h3>🌿 Un camino hacia la transformación</h3>
+            <p>
+                El Eneagrama no es solo una herramienta de tipificación, sino una guía para el desarrollo personal. Nos permite detectar las distorsiones cognitivas y
+                emocionales que nos limitan y nos ofrece un camino de liberación basado en el autoconocimiento, el desarrollo personal y la espiritualidad.
             </p>
             <p>
-                Como coach ontológico también uso el Eneagrama como herramienta para el <strong>CONTROL DEL ESTRÉS Y AUTORELAJACIÓN CONSCIENTE</strong>, relacionando la manera en que cada eneatipo gestiona el estrés y las formas más efectivas para lograr manejarlo de manera eficaz según su eneatipo.
+                Si buscas comprenderte mejor y conectar con tu verdadera esencia, el Eneagrama puede ser el primer paso en tu viaje de transformación.
             </p>
-            <p>
-                Y, sin lugar a dudas, entre mis servicios estrella (acompañando a personas y equipos para que conecten con su máximo potencial) están el <strong>ENEACOACHING PROFESIONAL</strong>, el <strong>ENEACOACHING ESENCIAL</strong> y el <strong>ENEACOACHING PARA PAREJAS</strong>.
-            </p>
-            <p>
-                Puedes consultar si puedo aplicar el Eneagrama en algún otro ámbito. En caso contrario, me comprometo a proporcionarte un profesional de la Escuela Internacional en Eneagrama Aplicado que pueda usar esta poderosa herramienta en algún ámbito que yo no domino y que pueda ser de tu interés.
-            </p>
-            <a href="/contacto" className="btn">Consulta</a>
+
+            <p>✨ Descubre quién eres más allá del ego.</p>
+
+            <div className="image-container">
+                <img src="/images/eneagrama.png" alt="Eneagrama" />
+            </div>
         </div>
     );
 };
 
-export default Otros;
+export default Seccion1;

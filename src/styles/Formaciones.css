@@ -32,7 +32,7 @@
   gap: 20px;
   padding: 40px 5px;
   flex-wrap: wrap;
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -43,122 +43,87 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
   text-align: left;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: clamp(320px, 30vw, 500px); /* 🔹 Se adapta a cualquier pantalla */
-  height: 280px; /* Ajustado para mantener el diseño consistente */
+  width: 350px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Imagen dentro de la tarjeta */
+.formacion-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
 /* Efecto hover refinado */
 .formacion-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 /* Contenedor de información */
 .formacion-info {
-  flex: 1;
-  padding: 15px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
 }
 
 /* Títulos dentro de las tarjetas */
 .formacion-info h3 {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
   color: #CFB53B;
   font-weight: bold;
-  letter-spacing: 0.5px;
 }
 
-/* Fechas */
-.formacion-info p {
-  font-size: 0.9rem;
-  color: #000000;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Descripción corta */
+/* Descripción */
 .formacion-descripcion {
   font-size: 0.9rem;
   color: #555;
-  margin-bottom: 10px;
-  line-height: 1.3;
+  margin: 10px 0;
+  line-height: 1.4;
 }
 
-/* Botón "Ver más" */
+/* Botón */
 .btn-ver-mas {
-  display: inline-block;
-  padding: 12px 18px;
-  background: linear-gradient(to right, #004d73, #006d94);
+  padding: 10px 20px;
+  background: #004d73;
   color: white;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 10px 0;
+  transition: background 0.3s ease;
 }
 
 .btn-ver-mas:hover {
-  background: linear-gradient(to right, #006d94, #0081b5);
-  transform: translateY(-2px);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  background: #006d94;
 }
 
-/* ===================== */
-/*  RESPONSIVE (Móviles) */
-/* ===================== */
+/* Responsivo */
 @media (max-width: 768px) {
   .formaciones-container {
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
   }
 
   .formacion-card {
-    display: flex;
-    align-items: stretch;
-    width: 90%; /* 🔹 Se adapta al ancho del móvil */
-    height: auto;
-    flex-direction: column;
-  }
-
-/* Aseguramos que las imágenes tengan el mismo tamaño y no se deformen */
-.formacion-card img {
-  width: 100%; /* La imagen ocupará el 100% del ancho disponible */
-  height: 200px; /* Establecemos una altura fija */
-  object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente */
-  border-radius: 12px 12px 0 0; /* Bordes redondeados en la parte superior */
-}
-
-  .formacion-info {
-    padding: 15px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .formacion-card {
-    width: 95%;
+    width: 90%;
+    margin: 5px auto;
   }
 
   .formacion-info h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .btn-ver-mas {
-    padding: 10px 15px;
     font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }

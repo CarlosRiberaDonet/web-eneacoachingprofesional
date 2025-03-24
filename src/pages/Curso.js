@@ -10,7 +10,7 @@ const Curso = () => {
             <div id="curso-basico">
                 <CursoBasico />
             </div>
-            <div id='eneagrama-empresas'>
+            <div id="eneagrama-empresas">
                 <EneagramaEmpresas />
             </div>
             <div id='otras-aplicaciones'>

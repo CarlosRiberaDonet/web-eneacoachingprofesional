@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../styles/global/ButtonStyles.css';
 
 const EneagramaEmpresas = () => {
     return (
@@ -35,7 +36,7 @@ const EneagramaEmpresas = () => {
                 ¿Quieres aplicar el Eneagrama en tu empresa? Desde EneaCoaching Profesional personalizo talleres, charlas y programas que puedan abarcar 
                 todas estas áreas y que puedan satisfacer las necesidades de tu empresa.
             </p>
-            <button className="contact-button">CONTACTA</button>
+            <button className="contact-button">Contacta</button>
         </div>
     );
 };

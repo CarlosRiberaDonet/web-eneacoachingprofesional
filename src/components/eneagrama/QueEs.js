@@ -30,7 +30,7 @@ const QueEs = () => {
                 Nos permite detectar las distorsiones cognitivas y emocionales que nos limitan y nos ofrece un camino de 
                 liberación basado en el autoconocimiento, el desarrollo personal y la espiritualidad.
             </p>
-            <p>✨ Descubre quién eres más allá del ego.</p>
+            <h3>✨ Descubre quién eres más allá del ego.</h3>
             <div className="image-container">
                 <img src="/images/eneagrama1.png" alt="Eneagrama" />
             </div>

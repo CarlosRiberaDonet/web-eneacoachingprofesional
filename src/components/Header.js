@@ -74,8 +74,8 @@ const Header = () => {
               <li><HashLink smooth to="/eneagrama#para-que-sirve" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
               <li><HashLink smooth to="/eneagrama#tipos-eneagrama" onClick={handleLinkClick}>Los 9 tipos de personalidad</HashLink></li>
               <li><HashLink smooth to="/curso#curso-basico" onClick={handleLinkClick}>Curso básico eneagrama</HashLink></li>
-              <li><HashLink smooth to="/curso#empresas" onClick={handleLinkClick}>Eneagrama para empresas</HashLink></li>
-              <li><HashLink smooth to="/curso#otras-aplicaciones" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>
+              <li><HashLink smooth to="/curso#eneagrama-empresas" onClick={handleLinkClick}>Eneagrama para empresas</HashLink></li>
+              <li><HashLink smooth to="/curso#otras-aplicaciones" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>             
             </ul>
           </li>
 

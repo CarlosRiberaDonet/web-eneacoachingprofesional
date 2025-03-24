@@ -1,0 +1,124 @@
+/* ========================= */
+/*  EneaCoaching Profesional - Estilos */
+/* ========================= */
+
+/* Estilo principal para la sección */
+.eneacoaching-profesional-section {
+    padding: 4rem 0;
+    background-color: var(--background-light);
+    color: var(--text-color);
+  }
+  
+  /* Contenedor general */
+  .eneacoaching-profesional-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex-wrap: wrap; /* Añadido para que se ajuste en pantallas más pequeñas */
+  }
+  
+  /* Texto a la izquierda */
+  .eneacoaching-profesional-text-content {
+    flex: 1;
+    max-width: 55%; /* Limitamos el ancho del texto */
+  }
+  
+  .eneacoaching-profesional-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .eneacoaching-profesional-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .eneacoaching-profesional-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .eneacoaching-profesional-benefits-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .eneacoaching-profesional-benefits-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  .eneacoaching-profesional-methodology {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+  }
+  
+  /* Botón */
+  .btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Imagen a la derecha */
+  .eneacoaching-profesional-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+    align-items: center;
+  }
+  
+  .eneacoaching-profesional-image {
+    max-width: 80%; /* Hace la imagen más pequeña */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* ========================= */
+  /*  Ajustes para pantallas pequeñas */
+  /* ========================= */
+  @media (max-width: 768px) {
+    .eneacoaching-profesional-content {
+      flex-direction: column; /* Hace que el contenido se apile en pantallas más pequeñas */
+      align-items: center; /* Centra el contenido */
+    }
+  
+    .eneacoaching-profesional-text-content {
+      max-width: 100%; /* Permite que el texto ocupe todo el ancho */
+      margin-bottom: 2rem; /* Da espacio entre el texto y la imagen */
+    }
+  
+    .eneacoaching-profesional-image-container {
+      width: 100%;
+      justify-content: center; /* Centra la imagen en pantallas pequeñas */
+    }
+  
+    .eneacoaching-profesional-image {
+      max-width: 90%; /* Hace la imagen un poco más grande en móviles, pero sin desbordar */
+    }
+  }
+  

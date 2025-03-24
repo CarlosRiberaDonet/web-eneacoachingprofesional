@@ -1,7 +1,7 @@
 import React from 'react';
 import CursoBasico from '../components/eneagrama/curso/CursoBasico';
 import EneagramaEmpresas from '../components/eneagrama/curso/EneagramaEmpresas';
-import '../styles/global/ButtonStyles.css';
+import OtrasAplicaciones from '../components/eneagrama/curso/OtrasAplicaciones';
 
 
 const Curso = () => {
@@ -13,8 +13,12 @@ const Curso = () => {
             <div id='eneagrama-empresas'>
                 <EneagramaEmpresas />
             </div>
+            <div id='otras-aplicaciones'>
+                <OtrasAplicaciones  />
+            </div>
         </div>
     );
 };
 
 export default Curso;
+

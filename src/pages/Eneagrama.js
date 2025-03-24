@@ -2,7 +2,8 @@ import React from 'react';
 import QueEs from '../components/eneagrama/QueEs';
 import ParaQue from '../components/eneagrama/ParaQue';
 import TiposEneagrama from '../components/eneagrama/TiposEneagrama';
-import '../styles/global/ButtonStyles.css';
+import '../styles/eneagrama/TiposEneagrama.css';
+import '../styles/global/SeccionContainer.css';
 
 
 const Eneagrama = () => {

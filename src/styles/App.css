@@ -10,7 +10,7 @@
   --background-light: #f8f9fa;
 }
 
-/* 🔹 Aplica Lora a toda la web */
+/*  Aplica Lora a toda la web */
 body {
   font-family: 'Lora', serif !important;
   background-color: var(--background-light);
@@ -19,26 +19,26 @@ body {
   padding: 0;
 }
 
-/* 🔹 Evita el scroll horizontal */
+/*  Evita el scroll horizontal */
 html, body {
   overflow-x: hidden; /* 🔹 Elimina el scroll lateral */
   width: 100%;
 }
 
-/* 🔹 Asegurar que todos los elementos respeten el tamaño */
+/*  Asegurar que todos los elementos respeten el tamaño */
 *, *::before, *::after {
   box-sizing: border-box;
   max-width: 100%;
 }
 
-/* 🔹 Contenedor principal */
+/*  Contenedor principal */
 .App {
   text-align: center;
   width: 100%;
-  overflow-x: hidden; /* 🔹 Evita cualquier desbordamiento */
+  overflow-x: hidden; /*  Evita cualquier desbordamiento */
 }
 
-/* 🔹 Header */
+/*  Header */
 .App-header {
   background-color: var(--primary-color);
   min-height: 100vh;
@@ -52,14 +52,14 @@ html, body {
   overflow: hidden;
 }
 
-/* 🔹 Asegurar que las imágenes no desborden */
+/*  Asegurar que las imágenes no desborden */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* 🔹 Ajustes responsivos */
+/*  Ajustes responsivos */
 @media (max-width: 768px) {
   html {
     font-size: 14px;

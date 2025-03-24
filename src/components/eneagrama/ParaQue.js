@@ -1,41 +1,45 @@
 import React from 'react';
-import '../../styles/global/SeccionContainer.css';
 
-const QueEs = () => {
-    return (
-        <div className="section-container">
-            <h2>¿Qué es el Eneagrama?</h2>
-            <p>
-                El Eneagrama de la Personalidad es mucho más que un sistema de clasificación psicológica: 
-                es un mapa de autoconocimiento y transformación personal. Describe nueve tipos de carácter, 
-                cada uno con su propia forma de pensar, sentir e interpretar el mundo, así como sus motivaciones, 
-                miedos y patrones de comportamiento específicos.
-            </p>
-            <h3>🧠 Comprender la personalidad desde una visión integradora</h3>
-            <p>
-                El Eneagrama no solo nos ayuda a identificar quiénes somos, sino que también nos permite comprender 
-                la neurosis y el desarrollo de la personalidad desde una perspectiva profunda. Cada eneatipo está vinculado a:
-            </p>
-            <ul>
-                <li>🔹 Una pasión dominante, que representa una emoción central en nuestra forma de ser.</li>
-                <li>🔹 Una fijación cognitiva, que influye en nuestra percepción de la realidad.</li>
-            </ul>
-            <p>
-                Reconocer estos patrones nos ayuda a identificar las estrategias defensivas del ego y cómo afectan 
-                nuestra relación con nosotros mismos, con los demás y con el mundo.
-            </p>
-            <h3>🌿 Un camino hacia la transformación</h3>
-            <p>
-                El Eneagrama no es solo una herramienta de tipificación, sino una guía para el desarrollo personal. 
-                Nos permite detectar las distorsiones cognitivas y emocionales que nos limitan y nos ofrece un camino de 
-                liberación basado en el autoconocimiento, el desarrollo personal y la espiritualidad.
-            </p>
-            <p>✨ Descubre quién eres más allá del ego.</p>
-            <div className="image-container">
-                <img src="/images/eneagrama1.png" alt="Eneagrama" />
-            </div>
-        </div>
-    );
+const EneagramaInfo = () => {
+  return (
+    <div className="section-container">
+      <h2>¿Para qué sirve el Eneagrama?</h2>
+      <p>
+        El Eneagrama no es solo un sistema para clasificar personalidades, sino una poderosa herramienta de autoconocimiento y transformación. Nos permite comprender los mecanismos del ego que condicionan nuestra vida y limitan nuestro potencial, abriéndonos el camino hacia una mayor libertad interior.
+      </p>
+
+      <h3>🔍 Sus principales beneficios</h3>
+
+      <ul>
+        <li>
+          <strong>1️⃣ Autoconocimiento profundo 🧠</strong>
+          <p>Nos ayuda a identificar patrones inconscientes de pensamiento, emoción y comportamiento que influyen en nuestras decisiones y en nuestra manera de relacionarnos con el mundo.</p>
+        </li>
+        <li>
+          <strong>2️⃣ Comprender la neurosis 💭</strong>
+          <p>Explica cómo cada eneatipo se ha formado como una respuesta a heridas emocionales de la infancia, permitiéndonos sanar y evolucionar.</p>
+        </li>
+        <li>
+          <strong>3️⃣ Mejorar las relaciones 💬</strong>
+          <p>Favorece una comunicación más auténtica y empática, al enseñarnos a comprender mejor a los demás y a gestionar nuestras emociones en los vínculos personales y profesionales.</p>
+        </li>
+        <li>
+          <strong>4️⃣ Transformación personal ✨</strong>
+          <p>No es solo un mapa de la personalidad, sino una guía para el crecimiento. Nos ayuda a trascender el ego y conectar con nuestra verdadera esencia.</p>
+        </li>
+        <li>
+          <strong>5️⃣ Herramienta de Coaching 🏥</strong>
+          <p>Utilizado en Coaching, facilita la exploración de conflictos emocionales, proporcionando un camino claro hacia la sanación y el bienestar.</p>
+        </li>
+      </ul>
+
+      <p>
+        El Eneagrama es una brújula para vivir con mayor conciencia, ayudándonos a romper con automatismos y a elegir un camino más auténtico y alineado con nuestra esencia.
+      </p>
+
+      <h3>🌿 Conócete. Transfórmate. Vive con propósito</h3>
+    </div>
+  );
 };
 
-export default QueEs;
+export default EneagramaInfo;

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/eneagrama/TiposEneagrama.css';
 
 const TiposEneagrama = () => {
     return (

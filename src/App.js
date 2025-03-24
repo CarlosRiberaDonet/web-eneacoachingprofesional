@@ -6,7 +6,6 @@ import Eneagrama from "./pages/Eneagrama";
 import Vicente from "./pages/Vicente";
 import Contacto from "./pages/ContactoPage";
 import Curso from "./pages/Curso";
-import './styles/global/ButtonStyles.css';
 import Footer from "./components/Footer";
 
 function App() {

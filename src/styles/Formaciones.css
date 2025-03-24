@@ -1,129 +1,127 @@
-/* ===== Sección de Formaciones ===== */
-.formaciones {
-  background: linear-gradient(to right, #1d4e5f, #173b4e);
-  padding: 40px 0;
+.formacion-seccion {
+  padding: 50px 0;
+  background-color: #073b52; /* Fondo oscuro elegante */
+}
+
+.formacion-titulo-seccion {
   text-align: center;
-  color: white;
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-/* Definimos la animación fadeIn */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.formaciones h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  font-weight: bold;
+  color: #e0e6ed; /* Blanco roto para destacar */
+  margin-bottom: 30px;
 }
 
-/* Contenedor de tarjetas */
-.formaciones-container {
+.formacion-contenedor {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 40px 5px;
-  flex-wrap: wrap;
-  max-width: 1600px;
-  margin: 0 auto;
+  gap: 30px; /* Espacio uniforme entre tarjetas */
+  flex-wrap: nowrap; /* Evita que las tarjetas pasen a la siguiente línea */
+  overflow-x: auto; /* Scroll horizontal si hay muchas tarjetas */
+  padding: 0 20px;
 }
 
-/* Tarjetas individuales */
-.formacion-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+.formacion-tarjeta {
+  display: flex;
+  align-items: center; /* Alinear verticalmente el contenido */
+  justify-content: flex-start; /* Alinear el contenido a la izquierda */
+  gap: 20px; /* Espacio entre imagen y contenido */
+  width: 400px; /* Ancho fijo para uniformidad */
+  background-color: #ffffff; /* Fondo blanco para destacar */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
   text-align: left;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.formacion-tarjeta:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+.formacion-imagen img {
+  width: 120px; /* Tamaño fijo para mantener la proporción */
+  height: auto;
+  border-radius: 10px; /* Redondeo para la imagen */
+}
+
+.formacion-contenido {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 350px;
-  height: auto;
-  margin: 10px;
+  justify-content: center;
+  flex: 1;
 }
 
-/* Imagen dentro de la tarjeta */
-.formacion-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
-
-/* Efecto hover refinado */
-.formacion-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Contenedor de información */
-.formacion-info {
-  padding: 15px;
-  text-align: center;
-}
-
-/* Títulos dentro de las tarjetas */
-.formacion-info h3 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-  color: #CFB53B;
+.formacion-titulo {
+  margin: 5px 0;
+  font-size: 1.4rem;
   font-weight: bold;
+  color: #d4af37; /* Dorado para resaltar */
 }
 
-/* Descripción */
 .formacion-descripcion {
-  font-size: 0.9rem;
+  margin: 5px 0;
   color: #555;
-  margin: 10px 0;
-  line-height: 1.4;
-}
-
-/* Botón */
-.btn-ver-mas {
-  padding: 10px 20px;
-  background: #004d73;
-  color: white;
-  text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  margin: 10px 0;
-  transition: background 0.3s ease;
 }
 
-.btn-ver-mas:hover {
-  background: #006d94;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .formaciones-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .formacion-card {
-    width: 90%;
-    margin: 5px auto;
-  }
-
-  .formacion-info h3 {
+.formacion-boton {
+   display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
     font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #004d73, #006d94); /*  Azul corporativo con degradado */
+    border: none;
+    border-radius: 50px; /*  Bordes más suaves */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.formacion-boton:hover {
+  background: linear-gradient(to right, #ffc107, #ff9800); /*  Cambio de color a dorado */
+  color: black;
+  transform: scale(1.07); /*  Efecto de crecimiento más sutil */
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+  .formacion-contenedor {
+      flex-wrap: wrap; /* Permitir que las tarjetas se apilen */
+      justify-content: center;
   }
 
-  .btn-ver-mas {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+  .formacion-tarjeta {
+      flex-direction: column; /* Imagen arriba, contenido abajo */
+      align-items: center;
+      width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+  }
+
+  .formacion-imagen img {
+      width: 100%; /* Imagen a ancho completo */
+      height: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+
+  .formacion-contenido {
+      text-align: center;
+      padding: 15px;
+  }
+
+  .formacion-titulo {
+      font-size: 1.2rem;
+  }
+
+  .formacion-descripcion {
+      font-size: 0.9rem;
+  }
+
+  .formacion-boton {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
   }
 }

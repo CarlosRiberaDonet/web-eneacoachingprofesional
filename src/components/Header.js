@@ -20,6 +20,7 @@ const Header = () => {
   const handleLinkClick = () => {
     setActiveDropdown(null);
     setMenuOpen(false);
+    window.scrollTo(0, 0); // Desplazar al principio de la página
   };
 
   useEffect(() => {
@@ -57,7 +58,7 @@ const Header = () => {
 
         <ul className={`custom-nav-links ${menuOpen ? "active" : ""}`}>
           <li className={`custom-dropdown ${activeDropdown === "eneagrama" ? "active" : ""}`}>
-            <Link to="/eneagrama" onClick={() => toggleDropdown("eneagrama")}>Eneagrama ▾</Link>
+            <Link to="/eneagrama" onClick={() => {toggleDropdown("eneagrama"); window.scrollTo(0, 0)}}>Eneagrama ▾</Link>
             <ul className="custom-dropdown-menu">
               <li><HashLink smooth to="/eneagrama#que-es-eneagrama" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
               <li><HashLink smooth to="/eneagrama#para-que-eneagrama" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
@@ -69,7 +70,7 @@ const Header = () => {
           </li>
 
           <li className={`custom-dropdown ${activeDropdown === "coaching" ? "active" : ""}`}>
-            <Link to="/coaching" onClick={() => toggleDropdown("coaching")}>Coaching ▾</Link>
+            <Link to="/coaching" onClick={() => {toggleDropdown("coaching"); window.scrollTo(0, 0)}}>Coaching ▾</Link>
             <ul className="custom-dropdown-menu">
               <li><HashLink smooth to="/coaching#que-es-coaching" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
               <li><HashLink smooth to="/coaching#para-que-coaching" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
@@ -79,13 +80,13 @@ const Header = () => {
           </li>
 
           <li className={`custom-dropdown ${activeDropdown === "eneacoaching" ? "active" : ""}`}>
-            <Link to="/eneacoaching" onClick={() => toggleDropdown("eneacoaching")}>EneaCoaching ▾</Link>
+            <Link to="/eneacoaching" onClick={() => {toggleDropdown("eneacoaching"); window.scrollTo(0, 0)}}>EneaCoaching ▾</Link>
             <ul className="custom-dropdown-menu">
               <li><HashLink smooth to="/eneacoaching#que-es-eneacoaching" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
               <li><HashLink smooth to="/eneacoaching#para-que-eneacoaching" onClick={handleLinkClick}>Beneficios EneaCoaching</HashLink></li>
               <li><HashLink smooth to="/eneacoaching#eneacoaching-profesional" onClick={handleLinkClick}>EneaCoaching Profesional</HashLink></li>
               <li><HashLink smooth to="/eneacoaching#eneacoaching-esencial" onClick={handleLinkClick}>EneaCoaching Esencial</HashLink></li>
-              <li><HashLink smooth to="/eneacoaching#eneacoaching-parejas" onClick={handleLinkClick}>EneaCoaching para</HashLink></li>
+              <li><HashLink smooth to="/eneacoaching#eneacoaching-parejas" onClick={handleLinkClick}>EneaCoaching para Parejas</HashLink></li>
             </ul>
           </li>
 

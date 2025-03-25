@@ -44,7 +44,7 @@
 /* Bloque de cada eneatipo */
 .eneatipo {
     margin: 20px 0;
-    text-align: left;
+    text-align: center;
     padding: 20px;
     border-radius: 12px;
     background-color: #f4f7f9;
@@ -52,12 +52,27 @@
 }
 
 .eneatipo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #F4F7F9; /* Color de fondo ligeramente más claro */
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.6), 0 0 40px rgba(255, 193, 7, 0.4), 0 0 60px rgba(255, 193, 7, 0.2);
+    transition: all 0.3s ease;
 }
 .eneatipo h4 {
     font-size: x-large;
-    color: #ffc107;
+    color: #006D94;
+}
+
+.eneatipo:hover h4 {  
+    color: #ffc107;    
+    transition: all 0.4s ease;
+}
+
+.img-eneagrama2-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-eneagrama2-container:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
 }
 
 

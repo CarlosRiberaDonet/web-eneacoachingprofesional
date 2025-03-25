@@ -1,0 +1,65 @@
+/* Bloque de cada eneatipo */
+.eneatipo {
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f4f7f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eneatipo:hover {
+    background-color: #F4F7F9; /* Color de fondo ligeramente más claro */
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.6), 0 0 40px rgba(255, 193, 7, 0.4), 0 0 60px rgba(255, 193, 7, 0.2);
+    transition: all 0.3s ease;
+}
+.eneatipo h4 {
+    font-size: x-large;
+    color: #006D94;
+}
+
+.eneatipo:hover h4 {  
+    color: #ffc107;    
+    transition: all 0.4s ease;
+}
+
+.eneagrama-list {
+    list-style-type: none;  /* Quitar los puntos por defecto */
+    text-align: center;     /* Centrar el contenido */
+    margin: 0 auto;         /* Centrar el contenedor del ul */
+    padding: 0;
+}
+
+.eneagrama-list li {
+    display: inline-block;  /* Hacer que los elementos se comporten como bloques en línea */
+    margin: 10px 0;         /* Espacio entre los elementos */
+    padding: 5px 20px;      /* Relleno para darle un poco de aire */
+    font-weight: bold;      /* Hacer el texto en negrita */
+    text-align: center;     /* Asegurar que el texto dentro del bloque esté centrado */
+    background-color: #f4f7f9; /* Fondo suave para destacar */
+    border-radius: 8px;     /* Bordes redondeados */
+}
+
+/* ========================= */
+/*  Imagen del Eneagrama */
+/* ========================= */
+.eneagrama2-image{
+    margin: 30px auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eneagrama2-image:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.6), 0 0 40px rgba(255, 193, 7, 0.4), 0 0 60px rgba(255, 193, 7, 0.2);
+    transition: all 0.3s ease;
+}
+
+.eneagrama2-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}

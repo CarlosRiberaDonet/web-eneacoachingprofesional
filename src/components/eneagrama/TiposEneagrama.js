@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styles/eneagrama/Eneagrama.css';
+
 const TiposEneagrama = () => {
     return (
         <div className="section-container">

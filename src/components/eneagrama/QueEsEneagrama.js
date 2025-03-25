@@ -15,7 +15,7 @@ const QueEsEneagrama = () => {
                 El Eneagrama no solo nos ayuda a identificar quiénes somos, sino que también nos permite comprender 
                 la neurosis y el desarrollo de la personalidad desde una perspectiva profunda. Cada eneatipo está vinculado a:
             </p>
-            <ul>
+            <ul className="eneagrama-list">
                 <li>🔹 Una pasión dominante, que representa una emoción central en nuestra forma de ser.</li>
                 <li>🔹 Una fijación cognitiva, que influye en nuestra percepción de la realidad.</li>
             </ul>

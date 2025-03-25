@@ -11,54 +11,55 @@ const ParaQueCoaching = () => {
       <h3>Principales beneficios del Coaching Ontológico:</h3>
 
       <div className="tipos-eneagrama-container">
-        <h4>- Autoconocimiento profundo</h4>
+        <h4>Autoconocimiento profundo</h4>
         <p>
           Ayuda a comprender cómo pensamos, sentimos y actuamos, identificando patrones que pueden estar limitando nuestro crecimiento personal y profesional.
         </p>
       </div>
 
       <div className="tipos-eneagrama-container">
-        <h4>- Mejora la comunicación y las relaciones</h4>
+        <h4>Mejora la comunicación y las relaciones</h4>
         <p>
           Nos permite desarrollar una comunicación más efectiva, basada en la escucha activa, la empatía y la claridad, mejorando nuestras relaciones en todos los ámbitos.
         </p>
       </div>
 
       <div className="tipos-eneagrama-container">
-        <h4>- Desbloqueo de creencias limitantes</h4>
+        <h4>Desbloqueo de creencias limitantes</h4>
         <p>
           Muchas veces, lo que nos detiene no son las circunstancias externas, sino nuestras propias creencias. El Coaching Ontológico ayuda a replantear esas creencias y abrir nuevas posibilidades de acción.
         </p>
       </div>
 
       <div className="tipos-eneagrama-container">
-        <h4>- Gestión emocional y resiliencia</h4>
+        <h4>Gestión emocional y resiliencia</h4>
         <p>
           Trabaja con la conexión entre lenguaje, cuerpo y emoción, permitiendo gestionar mejor el estrés, la ansiedad y los desafíos de la vida con mayor inteligencia emocional.
         </p>
       </div>
 
       <div className="tipos-eneagrama-container">
-        <h4>- Desarrollo del liderazgo y la toma de decisiones</h4>
+        <h4>Desarrollo del liderazgo y la toma de decisiones</h4>
         <p>
           Es una herramienta clave para líderes, emprendedores y profesionales que desean potenciar sus habilidades de liderazgo, motivación y toma de decisiones conscientes.
         </p>
       </div>
 
       <div className="tipos-eneagrama-container">
-        <h4>- Mayor sentido de propósito y bienestar</h4>
+        <h4>Mayor sentido de propósito y bienestar</h4>
         <p>
           Facilita la alineación entre lo que pensamos, sentimos y hacemos, ayudando a vivir con mayor autenticidad, propósito y plenitud.
         </p>
       </div>
 
+      {/* Lista de aplicaciones del Coaching Ontológico */}
       <h3>📍 Aplicaciones del Coaching Ontológico:</h3>
-      <ul>
-        <li>✅ Crecimiento personal y autoconocimiento</li>
-        <li>✅ Desarrollo profesional y liderazgo</li>
-        <li>✅ Coaching para empresas y equipos</li>
-        <li>✅ Educación y relaciones interpersonales</li>
-        <li>✅ Gestión del cambio y adaptación a nuevas realidades</li>
+      <ul className="coaching-applications">
+        <li>Crecimiento personal y autoconocimiento</li>
+        <li>Desarrollo profesional y liderazgo</li>
+        <li>Coaching para empresas y equipos</li>
+        <li>Educación y relaciones interpersonales</li>
+        <li>Gestión del cambio y adaptación a nuevas realidades</li>
       </ul>
 
       <p>

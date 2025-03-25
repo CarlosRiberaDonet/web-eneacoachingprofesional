@@ -11,18 +11,25 @@
     text-align: center;
 }
 
+/* Estilo para h2 */
 .section-container h2 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;  /* Aumento de tamaño */
     color: #004d73;
-    margin-bottom: 20px;
-    font-weight: bold;
+    margin-bottom: 30px;  /* Más espacio debajo */
+    font-weight: 700;  /* Hacerlo más destacado */
+    text-transform: uppercase;  /* Poner en mayúsculas */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #006d94;  /* Añadir una línea debajo */
 }
 
+/* Estilo para h3 */
 .section-container h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;  /* Aumento de tamaño */
     color: #006d94;
-    margin: 20px 0;
-    font-weight: bold;
+    margin: 25px 0;  /* Más espacio alrededor */
+    font-weight: 600;
+    text-transform: capitalize;  /* Primeras letras en mayúsculas */
+    padding-bottom: 8px;
 }
 
 .section-container p {

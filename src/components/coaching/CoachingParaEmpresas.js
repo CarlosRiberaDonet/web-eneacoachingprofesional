@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../../styles/global/ButtonStyles.css';
+
 const CoachingParaEmpresas = () => {
   return (
     <section className="section-container">
@@ -78,10 +80,10 @@ const CoachingParaEmpresas = () => {
         El Coaching Ontológico puede ser la clave para que tu empresa alcance su máximo potencial. Con un enfoque personalizado, ayudamos a tus equipos a tomar decisiones más acertadas, gestionar el cambio de manera efectiva y trabajar con mayor compromiso y alineación.
       </p>
       <p>
-        Reserva ahora una consulta inicial y descubre cómo podemos ayudar a tu empresa a alcanzar nuevas alturas.
+        <b>Reserva ahora una consulta inicial</b> y descubre cómo podemos ayudar a tu empresa a alcanzar nuevas alturas.
       </p>
 
-      <button className="contact-button">Solicita una Consulta Ahora</button>
+      <a href="/contacto" className="btn-sesion">Solicita una Consulta Ahora</a>
     </section>
   );
 };

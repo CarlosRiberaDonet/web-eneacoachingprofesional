@@ -6,6 +6,7 @@ import SesionesIndividuales from "../components/coaching/SesionesIndividuales";
 import CoachingParaEmpresas from "../components/coaching/CoachingParaEmpresas";
 
 import '../styles/eneagrama/TiposEneagrama.css';
+import '../styles/coaching/Coaching.css';
 import '../styles/global/ButtonStyles.css';
 
 

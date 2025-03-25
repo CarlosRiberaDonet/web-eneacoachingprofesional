@@ -30,7 +30,7 @@ const CursoBasico = () => {
                 implementarlo y al tiempo que dispongas.
             </p>
 
-            <button className="contact-button">Consultar</button>
+            <a href="/contacto" className="btn-sesion ">Consultar</a>
 
         </div>
     );

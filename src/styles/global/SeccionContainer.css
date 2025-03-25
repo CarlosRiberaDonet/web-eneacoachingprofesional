@@ -2,7 +2,7 @@
 /*  Clase Global para Contenedores de Secciones */
 /* ========================= */
 .section-container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 40px auto;
     padding: 40px;
     background-color: white;
@@ -60,3 +60,43 @@
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
+/* ========================= */
+/*  Estilos para el contenedor de precios */
+.price-container {
+    display: flex;
+    justify-content: space-evenly; /* Para distribuir las tarjetas equitativamente */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    flex-wrap: wrap; /* Si hay más tarjetas, se ajustan en nuevas filas */
+    width: 100%;
+  }
+  
+  /* ========================= */
+  /*  Estilo para cada tarjeta de precio */
+  .price-card {
+    text-align: center; /* Centra el contenido dentro de la tarjeta */
+    padding: 20px;
+    background-color: #f4f7f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Hace que las tarjetas ocupen el 30% del ancho disponible */
+    min-width: 250px; /* Ajusta un tamaño mínimo para las tarjetas */
+    max-width: 350px; /* Limita el tamaño máximo para evitar que se expandan demasiado */
+    margin-bottom: 20px; /* Añade un margen en la parte inferior */
+  }
+  
+  .price-card h4 {
+    font-size: 1.1rem; /* Reducir tamaño del título */
+    color: #004d73; /* Color de los títulos */
+    margin-bottom: 10px;
+  }
+  
+  .price-card p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #006d94; /* Color del precio */
+    margin-top: 10px;
+    text-align: center; /* Asegura que el precio se centre dentro de la tarjeta */
+  }
+  
+  

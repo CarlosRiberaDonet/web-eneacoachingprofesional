@@ -1,4 +1,4 @@
-.btn {
+.btn-sesion {
     display: inline-block;
     margin-top: 25px;
     padding: 14px 30px;
@@ -13,7 +13,7 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .btn:hover {
+  .btn-sesion:hover {
     background: linear-gradient(to right, #ffc107, #ff9800); /*  Cambio de color a dorado */
     color: black;
     transform: scale(1.07); /*  Efecto de crecimiento más sutil */

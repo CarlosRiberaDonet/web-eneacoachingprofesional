@@ -5,7 +5,9 @@ import ParaQueCoaching from "../components/coaching/ParaQueCoaching";
 import SesionesIndividuales from "../components/coaching/SesionesIndividuales";
 import CoachingParaEmpresas from "../components/coaching/CoachingParaEmpresas";
 
-import '../styles/global/SeccionContainer.css';
+import '../styles/eneagrama/TiposEneagrama.css';
+import '../styles/global/ButtonStyles.css';
+
 
 const Coaching = () => {
  return(

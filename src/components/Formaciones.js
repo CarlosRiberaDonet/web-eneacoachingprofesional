@@ -1,5 +1,6 @@
 import React from 'react';
 
+import '../index.css';
 import '../styles/Formaciones.css';
 
 import eneacoaching from '../assets/images/eneacoaching.png';

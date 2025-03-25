@@ -1,13 +1,12 @@
 import React from "react";
-import '../styles/global/ButtonStyles.css'; // Estilos globales para los botones
 
-const CoachingOntologico = () => {
+const QueEsCoaching = () => {
   return (
     <section className="section-container">
       <div className="coaching-ontologico-content">
         <div className="coaching-ontologico-text-content">
-          <h1 className="coaching-ontologico-title">Coaching Ontológico</h1>
-          <h2 className="coaching-ontologico-subtitle">¿Qué es?</h2>
+          <h2 className="coaching-ontologico-title">Coaching Ontológico</h2>
+          <h3 className="coaching-ontologico-subtitle">¿Qué es?</h3>
           <p className="coaching-ontologico-description">
             El Coaching Ontológico es un enfoque profundo de transformación personal y profesional que se basa en la forma en que percibimos y damos sentido al mundo. "Ontología" significa el estudio del "ser", por lo que este tipo de coaching no solo se enfoca en lo que hacemos, sino en quiénes somos mientras lo hacemos.
           </p>
@@ -53,4 +52,4 @@ const CoachingOntologico = () => {
   );
 };
 
-export default CoachingOntologico;
+export default QueEsCoaching;

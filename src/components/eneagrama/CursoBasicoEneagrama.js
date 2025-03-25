@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const CursoBasico = () => {
     return (
         <div className="section-container">

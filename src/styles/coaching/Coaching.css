@@ -1,0 +1,122 @@
+/* ========================= */
+/*  Sección "Coaching para Empresas" y otras páginas de Coaching */
+/* ========================= */
+.coaching-container {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título principal */
+.coaching-container h2 {
+  font-size: 2.4rem;
+  color: #004d73;
+  margin-bottom: 20px;
+}
+
+/* Subtítulos generales */
+.coaching-container h3 {
+  font-size: 1.8rem;
+  color: #006d94;
+  margin: 25px 0;
+}
+
+/* Títulos de los temas específicos */
+.coaching-container h4 {
+  font-size: 1.6rem;
+  color: #004d73;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Párrafos generales */
+.coaching-container p {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Bloque de cada tipo de coaching (por ejemplo, sesiones) */
+.coaching-type {
+  margin: 20px 0;
+  text-align: left;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f4f7f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coaching-type:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================= */
+/*  Imagen de Coaching (si se utiliza) */
+/* ========================= */
+.image-container {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.coaching-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+
+/* ========================= */
+/*  Responsive Design */
+/* ========================= */
+@media (max-width: 1200px) {
+  .coaching-container {
+      padding: 30px;
+  }
+
+  .coaching-container h2 {
+      font-size: 2rem;
+  }
+
+  .coaching-container h3,
+  .coaching-container h4 {
+      font-size: 1.6rem;
+  }
+
+  .coaching-container p {
+      font-size: 1.2rem;
+  }
+
+  .coaching-type {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coaching-container {
+      padding: 20px;
+  }
+
+  .coaching-container h2 {
+      font-size: 1.8rem;
+  }
+
+  .coaching-container h3,
+  .coaching-container h4 {
+      font-size: 1.4rem;
+  }
+
+  .coaching-container p {
+      font-size: 1.1rem;
+  }
+
+  .coaching-image {
+      max-width: 100%;
+  }
+}

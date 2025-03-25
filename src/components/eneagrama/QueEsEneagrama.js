@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-const QueEs = () => {
+const QueEsEneagrama = () => {
     return (
         <div className="section-container">
             <h2>¿Qué es el Eneagrama?</h2>
@@ -38,4 +37,4 @@ const QueEs = () => {
     );
 };
 
-export default QueEs;
+export default QueEsEneagrama;

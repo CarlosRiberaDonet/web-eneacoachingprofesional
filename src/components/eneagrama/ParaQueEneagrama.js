@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EneagramaInfo = () => {
+const ParaQueEneagrama = () => {
   return (
     <div className="section-container">
       <h2>¿Para qué sirve el Eneagrama?</h2>
@@ -42,4 +42,4 @@ const EneagramaInfo = () => {
   );
 };
 
-export default EneagramaInfo;
+export default ParaQueEneagrama;

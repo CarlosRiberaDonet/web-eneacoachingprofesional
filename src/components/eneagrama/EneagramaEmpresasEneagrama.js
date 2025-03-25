@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../styles/global/ButtonStyles.css';
 
 const EneagramaEmpresas = () => {
     return (

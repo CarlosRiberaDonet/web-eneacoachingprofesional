@@ -70,24 +70,25 @@ const Header = () => {
           <li className={`dropdown ${activeDropdown === "eneagrama" ? "active" : ""}`}>
             <Link to="/eneagrama" onClick={() => toggleDropdown("eneagrama")}>Eneagrama ▾</Link>
             <ul className="dropdown-menu">
-              <li><HashLink smooth to="/eneagrama#que-es" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
-              <li><HashLink smooth to="/eneagrama#para-que-sirve" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
+              <li><HashLink smooth to="/eneagrama#que-es-eneagrama" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
+              <li><HashLink smooth to="/eneagrama#para-que-eneagrama" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
               <li><HashLink smooth to="/eneagrama#tipos-eneagrama" onClick={handleLinkClick}>Los 9 tipos de personalidad</HashLink></li>
-              <li><HashLink smooth to="/curso#curso-basico" onClick={handleLinkClick}>Curso básico eneagrama</HashLink></li>
-              <li><HashLink smooth to="/curso#eneagrama-empresas" onClick={handleLinkClick}>Eneagrama para empresas</HashLink></li>
-              <li><HashLink smooth to="/curso#otras-aplicaciones" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>             
+              <li><HashLink smooth to="/eneagrama#curso-basico" onClick={handleLinkClick}>Curso básico eneagrama</HashLink></li>
+              <li><HashLink smooth to="/eneagrama#eneagrama-empresas" onClick={handleLinkClick}>Eneagrama para empresas</HashLink></li>
+              <li><HashLink smooth to="/eneagrama#otras-aplicaciones" onClick={handleLinkClick}>Otras aplicaciones</HashLink></li>
+
+    
             </ul>
           </li>
 
           {/* Dropdown Coaching */}
           <li className={`dropdown ${activeDropdown === "coaching" ? "active" : ""}`}>
-            <Link to="#" onClick={() => toggleDropdown("coaching")}>Coaching ▾</Link>
+            <Link to="/coaching" onClick={() => toggleDropdown("coaching")}>Coaching ▾</Link>
             <ul className="dropdown-menu">
-              <li><Link to="#" onClick={handleLinkClick}>¿Qué es?</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>¿Para qué sirve?</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>Sesiones individuales</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>Coaching para empresas</Link></li>
-              <li><Link to="#" onClick={handleLinkClick}>Otras aplicaciones</Link></li>
+              <li><HashLink smooth to="/coaching#que-es-coaching" onClick={handleLinkClick}>¿Qué es?</HashLink></li>
+              <li><HashLink smooth to="/coaching#para-que-coaching" onClick={handleLinkClick}>¿Para qué sirve?</HashLink></li>
+              <li><HashLink smooth to="/coaching#sesiones-individuales" onClick={handleLinkClick}>Sesiones individuales</HashLink></li>
+              <li><HashLink smooth to="/coaching#coaching-empresas" onClick={handleLinkClick}>Coaching para empresas</HashLink></li>
             </ul>
           </li>
 

@@ -10,8 +10,8 @@
 .historia-content {
   display: flex;
   align-items: center;
-  max-width: 1100px; /* 🔹 Reducimos un poco el ancho */
-  gap: 50px; /* 🔹 Espaciado más armonioso */
+  max-width: 1100px; /*  Reducimos un poco el ancho */
+  gap: 50px; /*  Espaciado más armonioso */
 }
 
 /* Estilos para la imagen */
@@ -21,7 +21,7 @@
 
 .historia-imagen img {
   width: 100%;
-  max-width: 450px; /* 🔹 Tamaño más equilibrado */
+  max-width: 450px; /*  Tamaño más equilibrado */
   border-radius: 10px;
   filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.15));
 }
@@ -33,7 +33,7 @@
 }
 
 .historia-texto h2 {
-  font-size: 2.2rem; /* 🔹 Más grande y llamativo */
+  font-size: 2.2rem; /*  Más grande y llamativo */
   color: #004d73;
   font-weight: bold;
   margin-bottom: 15px;
@@ -41,7 +41,7 @@
 
 .historia-texto p {
   font-size: 1.1rem;
-  line-height: 1.8; /* 🔹 Mejor legibilidad */
+  line-height: 1.8; /*  Mejor legibilidad */
   color: #333;
   text-align: justify;
 }

@@ -46,7 +46,8 @@ const EneaCoachingEsencial = () => {
 
       <p><strong>¡No dejes pasar más tiempo!</strong></p>
 
-      <button className="contact-button">Reserva Ahora tu Pack de 10 Sesiones</button>
+      {/* Botón de acción */}
+      <a href="/contacto" className="btn-sesion">Reserva Ahora tu Pack de 10 Sesiones</a>
         
     </section>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/EneaCoaching.css';
 import '../styles/global/ButtonStyles.css';
+import { Link } from "react-router-dom";
 
 const EneaCoaching = () => {
   return (
@@ -37,14 +38,9 @@ const EneaCoaching = () => {
           <p className="eneacoaching-profesional-description">
             Si estás listo para transformar tu vida y descubrir tu verdadero propósito, te acompaño en este camino de crecimiento personal y profesional.
           </p>
-          <button
-            className="btn-contacto"
-            onClick={() => {
-              const section = document.getElementById("contacto");
-              section?.scrollIntoView({ behavior: "smooth" });
-            }}
-          > Descubre más sobre EneaCoaching Profesional
-          </button>
+          
+              <Link className="btn-sesion" to="/eneacoaching#eneacoaching-profesional">Descubre más sobre EneaCoaching Profesional</Link>
+
         </div>
         
         

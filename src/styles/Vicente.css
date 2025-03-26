@@ -1,5 +1,5 @@
 .vicente-container {
-    max-width: 800px;
+    max-width: 1600px;
     margin: 20px auto;
     padding: 40px 20px;
     text-align: left;
@@ -27,8 +27,8 @@
 
 .vicente-image {
     width: 100%;         /* La imagen ocupa todo el ancho del contenedor */
-    height: 400px;        /* Mantener la proporción */
-    max-width: 800px;    /* Máximo ancho igual al contenedor de texto */
+    height: 500px;        /* Mantener la proporción */
+    max-width: 1000px;    /* Máximo ancho igual al contenedor de texto */
     border-radius: 10px; /* Bordes suaves */
     object-fit: cover;   /* Ajuste proporcional */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */

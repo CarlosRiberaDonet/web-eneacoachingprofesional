@@ -21,10 +21,13 @@ const Typing = () => {
           tu máximo potencial.
         </p>
 
-        {/* Botón de acción */}
-        <a href="/consulta-gratuita" className="btn-sesion">
-          Consulta una sesión gratuita
-        </a>
+        <button
+          className="btn-contacto"
+          onClick={() => {
+            const section = document.getElementById("contacto");
+            section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            >Consulta una sesión gratuita</button>
 
         {/* Imagen centrada bajo el botón */}
         <div className="image-container">

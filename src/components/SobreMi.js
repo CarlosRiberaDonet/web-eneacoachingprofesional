@@ -43,10 +43,10 @@ const SobreMi = () => {
 
         </div>
 
-        {/* Sección de Imagen */}
-        <div className="image-container-vicente">
-          <img src={vicente} alt="Vicente Montolío" className="sobre-mi-image" />
-        </div>
+      {/* Sección de Imagen */}
+      <div className="image-container-vicente">
+        <img src={vicente} alt="Vicente Montolío" className="sobre-mi-image" />
+      </div>
 
       </div>
     </section>

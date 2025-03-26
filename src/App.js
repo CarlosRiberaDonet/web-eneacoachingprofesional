@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToHash from './components/ScrollToHash';
 
 import Home from './components/Home';
@@ -14,7 +15,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <ScrollToHash /> {/* Activamos el scroll automático */}
+      <ScrollToHash /> {/* Asegúrate de que esté aquí */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />
+      <ScrollToTopButton />
     </Router>
   );
 }

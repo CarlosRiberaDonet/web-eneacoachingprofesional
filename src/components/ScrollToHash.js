@@ -1,3 +1,4 @@
+// src/components/ScrollToHash.js
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -9,26 +10,16 @@ const ScrollToHash = () => {
       if (location.hash) {
         const element = document.getElementById(location.hash.replace("#", ""));
         if (element) {
-          const headerOffset = 0; // Ajusta si tienes un header fijo
-          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-          const offsetPosition = elementPosition - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-          });
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       } else {
-        // Si no hay hash, hacer scroll hacia arriba
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
+        // Desplazamiento a la parte superior en rutas sin hash
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
     };
 
-    // Espera un pequeño intervalo para asegurarse de que el DOM esté completamente cargado
-    setTimeout(scrollToElement, 100);
+    // Ejecutar el desplazamiento tan pronto como cambie la ubicación
+    scrollToElement();
   }, [location]);
 
   return null;

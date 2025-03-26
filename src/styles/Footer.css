@@ -24,36 +24,37 @@
 /* ========================= */
 /*  SECCIÓN IZQUIERDA - Presentación */
 /* ========================= */
-.footer-left {
+.footer-left-section {
     max-width: 30%;
     text-align: center;
     margin-left: -20px; /* Ajuste para centrar mejor */
 }
 
-.footer-left h2 {
+.footer-left-section h2 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.footer-left p {
+.footer-left-section p {
     font-size: 1rem;
     margin-bottom: 15px;
 }
 
-/* Iconos de redes sociales */
-.social-icons {
+.social-icons-footer {
     display: flex;
     gap: 15px;
+    justify-content: center; /* Esto centra los iconos horizontalmente */
+    align-items: center; /* Esto los alinea verticalmente en el centro */
 }
 
-.social-icons a {
+.social-icons-footer a {
     font-size: 24px;
     color: white;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-icons a:hover {
+.social-icons-footer a:hover {
     color: #ffc107;
     transform: scale(1.2);
 }
@@ -61,12 +62,8 @@
 /* ========================= */
 /*  SECCIÓN CENTRAL - Servicios */
 /* ========================= */
-.footer-center {
-    text-align: center;
-    margin-left: -20px; /* Ajuste para centrar mejor */
-}
 
-.footer-center h3 {
+.footer-center-section h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
@@ -86,27 +83,36 @@
 /* ========================= */
 /*  SECCIÓN DERECHA - Contacto */
 /* ========================= */
-.footer-right {
+.footer-right-section {
     max-width: 30%;
     text-align: center;
     margin-right: -20px; /* Ajuste para centrar mejor */
 }
 
-.footer-right h3 {
+.footer-right-section h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.footer-right p {
+.footer-right-section p {
     font-size: 1rem;
     margin: 5px 0;
+}
+
+.footer-link{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: #ffc107;
 }
 
 /* ========================= */
 /*  SECCIÓN INFERIOR - LOGOS */
 /* ========================= */
-.footer-logos {
+.footer-logos-section {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -114,7 +120,7 @@
     flex-wrap: wrap;
 }
 
-.footer-logos img {
+.footer-logos-section img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -123,7 +129,7 @@
     margin: 0;
 }
 
-.footer-logos img:hover {
+.footer-logos-section img:hover {
     transform: scale(1.1);
 }
 
@@ -145,24 +151,24 @@
         align-items: center;
     }
 
-    .footer-left, .footer-center, .footer-right {
+    .footer-left-section, .footer-center-section, .footer-right-section {
         max-width: 100%;
         text-align: center;
         margin: 10px 0;
     }
 
-    .footer-logos {
+    .footer-logos-section {
         flex-direction: row;
         gap: 10px;
         justify-content: center;
     }
 
-    .footer-logos img {
+    .footer-logos-section img {
         width: 100px;
         height: 100px;
     }
 
-    .social-icons a {
+    .social-icons-footer a {
         font-size: 28px;
     }
 }

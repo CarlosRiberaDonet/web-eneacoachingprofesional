@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../index.css';
 import '../styles/Formaciones.css';
@@ -10,21 +11,21 @@ import eneagrama from '../assets/images/eneagrama.png';
 const formacionesData = [
   {
     image: coaching,
-    title: "ENEACOACHING PARA EMPRESAS",
+    title: "COACHING PARA EMPRESAS",
     description: "Conecta con tu máximo potencial en tu empresa y alinea tus creencias, valores y fortalezas con tu equipo de trabajo",
-    link: "#",
+    link: "/eneagrama#eneagrama-empresas",
   },
   {
     image: eneacoaching,
     title: "ENEACOACHING PROFESIONAL",
     description: "Conecta con tu esencia y con tu propósito profesional a través del Eneagrama y del Coaching Ontológico",
-    link: "#",
+    link: "/eneacoaching#eneacoaching-profesional",
   },
   {
     image: eneagrama,
     title: "CURSO BÁSICO EN ENEAGRAMA",
     description: "Iníciate en esta apasionante herramienta de autoconocimiento y desarrollo personal para conectar con tu máximo potencial",
-    link: "#",
+    link: "/eneagrama#curso-basico",
   },
 ];
 
@@ -41,7 +42,7 @@ const Formaciones = () => {
             <div className="formacion-contenido">
               <h3 className="formacion-titulo">{item.title}</h3>
               <p className="formacion-descripcion">{item.description}</p>
-              <a href={item.link} className="formacion-boton">Ver más</a>
+              <Link to={item.link} className="formacion-boton">Ver más</Link>
             </div>
           </div>
         ))}
@@ -51,3 +52,4 @@ const Formaciones = () => {
 };
 
 export default Formaciones;
+

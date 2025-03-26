@@ -1,0 +1,96 @@
+/* ========================= */
+/*  Claudio - Sección Homenaje */
+/* ========================= */
+
+.claudio {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #dbe7f0, #f0f4f8);
+  color: var(--text-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.claudio-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* Imagen de Claudio debajo del título */
+.image-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.claudio-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.claudio-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+/* Título principal */
+.text-content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulos y párrafos */
+.text-content p {
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 1.2rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.text-content p strong {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.text-content p em {
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .claudio {
+    padding: 4rem 1rem;
+  }
+
+  .text-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-content p {
+    font-size: 1.2rem;
+  }
+
+  .claudio-image {
+    max-width: 80%;
+  }
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

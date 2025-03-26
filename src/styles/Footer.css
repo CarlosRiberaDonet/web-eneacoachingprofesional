@@ -2,14 +2,14 @@
 /*  ESTILOS GENERALES DEL FOOTER */
 /* ========================= */
 .main-footer {
-    background-color: #004d73;/* Azul oscuro */
+    background-color: #004d73; /* Azul oscuro */
     color: white;
     padding: 40px 0;
     text-align: center;
     font-family: "Lora", serif;
 }
 
-/*  Contenedor principal del Footer */
+/* Contenedor principal del Footer */
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -17,6 +17,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* ========================= */
@@ -24,12 +26,14 @@
 /* ========================= */
 .footer-left {
     max-width: 30%;
-    text-align: left;
+    text-align: center;
+    margin-left: -20px; /* Ajuste para centrar mejor */
 }
 
 .footer-left h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .footer-left p {
@@ -37,7 +41,7 @@
     margin-bottom: 15px;
 }
 
-/*  Iconos de redes sociales */
+/* Iconos de redes sociales */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -57,15 +61,21 @@
 /* ========================= */
 /*  SECCIÓN CENTRAL - Servicios */
 /* ========================= */
+.footer-center {
+    text-align: center;
+    margin-left: -20px; /* Ajuste para centrar mejor */
+}
 
 .footer-center h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .service-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .service-list li {
@@ -78,12 +88,14 @@
 /* ========================= */
 .footer-right {
     max-width: 30%;
-    text-align: left;
+    text-align: center;
+    margin-right: -20px; /* Ajuste para centrar mejor */
 }
 
 .footer-right h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .footer-right p {
@@ -99,14 +111,20 @@
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .footer-logos img {
-    width: 120px; /* Puedes ajustar el tamaño según necesites */
-    height: 120px;
-    border-radius: 50%; /*  Hace la imagen redonda */
-    object-fit: cover; /* Asegura que la imagen se ajuste al círculo */
-    margin: 5px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.footer-logos img:hover {
+    transform: scale(1.1);
 }
 
 /* ========================= */
@@ -116,4 +134,35 @@
     margin-top: 20px;
     font-size: 1rem;
     opacity: 0.8;
+}
+
+/* ========================= */
+/*  RESPONSIVE DESIGN */
+/* ========================= */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        max-width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-logos {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .footer-logos img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-icons a {
+        font-size: 28px;
+    }
 }

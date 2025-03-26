@@ -6,7 +6,7 @@ import SobreMi from"./SobreMi";
 import Typing from "./Typing";
 import Claudio from "./Claudio";
 import Contacto from "./Contacto";
-import EneaCoachingProfesional from "./EneaCoachingProfesional";
+import EneaCoaching from "./EneaCoaching";
 
 <a href="/contacto" className="btn-contacto">Contacta</a>
 
@@ -25,7 +25,7 @@ const Home = () => {
       <SobreMi />
 
        {/*  Sección EneaCoachingProfesional */}
-       <EneaCoachingProfesional />
+       <EneaCoaching />
 
       {/*  Sección Typing */}
       <Typing />

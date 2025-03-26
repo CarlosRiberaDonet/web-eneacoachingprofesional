@@ -1,7 +1,7 @@
 import React from "react";
 
 import '../styles/global/ButtonStyles.css';
-import "../styles/Typing.css";
+import "../styles/home/Typing.css";
 import '../index.css';
 
 

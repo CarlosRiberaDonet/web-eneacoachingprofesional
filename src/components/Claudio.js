@@ -1,20 +1,20 @@
 import React from "react";
-import "../styles/Claudio.css";
+import "../styles/home/Claudio.css";
 
 const Claudio = () => {
   return (
     <section className="claudio">
       <div className="claudio-content">
         
-        {/* Contenedor de Imagen */}
-        <div className="image-container">
-          <img src="/images/claudio.png" alt="Claudio Naranjo" className="claudio-image" />
-        </div>
-
         {/* Contenedor de Texto */}
         <div className="text-content">
           <h2>Gracias, Claudio: Un Maestro que Transformó Caminos</h2>
           <p>🙏 Un legado de sabiduría y transformación</p>
+
+           {/* Contenedor de Imagen */}
+          <div className="image-container-claudio">
+            <img src="/images/claudio.png" alt="Claudio Naranjo" className="claudio-image" />
+          </div>
 
           <p>
             Mi trabajo no sería el mismo sin la influencia de Claudio Naranjo. 

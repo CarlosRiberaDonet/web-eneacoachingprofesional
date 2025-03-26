@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/EneaCoaching.css';
 import '../styles/global/ButtonStyles.css';
 
-const EneaCoachingProfesional = () => {
+const EneaCoaching = () => {
   return (
     <section className="eneacoaching-profesional-section">
       <div className="eneacoaching-profesional-content">
@@ -19,13 +19,13 @@ const EneaCoachingProfesional = () => {
           </p>
           <ul className="eneacoaching-profesional-benefits-list">
             <li>
-              ✅ <strong>Eneagrama:</strong> un mapa profundo de autoconocimiento que te permite comprender tu ego y tu esencia, patrones de comportamiento inconscientes y oportunidades de crecimiento.
+              ✅ <strong>Eneagrama:</strong> Un mapa profundo de autoconocimiento que te permite comprender tu ego y tu esencia, patrones de comportamiento inconscientes y oportunidades de crecimiento.
             </li>
             <li>
-              ✅ <strong>Coaching Ontológico:</strong> un proceso transformador que te ayuda a cambiar creencias limitantes, mejorar tu comunicación y lograr una vida más alineada con tus valores.
+              ✅ <strong>Coaching Ontológico:</strong> Un proceso transformador que te ayuda a cambiar creencias limitantes, mejorar tu comunicación y lograr una vida más alineada con tus valores.
             </li>
             <li>
-              ✅ <strong>Ikigai:</strong> un camino para descubrir tu propósito profesional y conectar con lo que realmente te motiva.
+              ✅ <strong>Ikigai:</strong> Un camino para descubrir tu propósito profesional y conectar con lo que realmente te motiva.
             </li>
           </ul>
           <p className="eneacoaching-profesional-methodology">
@@ -37,22 +37,25 @@ const EneaCoachingProfesional = () => {
           <p className="eneacoaching-profesional-description">
             Si estás listo para transformar tu vida y descubrir tu verdadero propósito, te acompaño en este camino de crecimiento personal y profesional.
           </p>
-          <a href="/contacto" className="btn">
-            Descubre más sobre EneaCoaching Profesional
-          </a>
+          <button
+            className="btn-contacto"
+            onClick={() => {
+              const section = document.getElementById("contacto");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+          > Descubre más sobre EneaCoaching Profesional
+          </button>
         </div>
-
+        
+        
         {/* Imagen a la derecha */}
         <div className="eneacoaching-profesional-image-container">
-          <img 
-            src="/images/eneacoachingprofesional.png" 
-            alt="EneaCoaching Profesional" 
-            className="eneacoaching-profesional-image" 
-          />
+          <img src="/images/eneacoachingprofesional.png" alt="EneaCoaching Profesional" className="eneacoaching-profesional-image" />      
         </div>
+        
       </div>
     </section>
   );
 };
 
-export default EneaCoachingProfesional;
+export default EneaCoaching;

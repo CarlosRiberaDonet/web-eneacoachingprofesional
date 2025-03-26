@@ -2,123 +2,151 @@
 /*  EneaCoaching Profesional - Estilos */
 /* ========================= */
 
-/* Estilo principal para la sección */
 .eneacoaching-profesional-section {
-    padding: 4rem 0;
-    background-color: var(--background-light);
-    color: var(--text-color);
-  }
-  
-  /* Contenedor general */
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: var(--text-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.eneacoaching-profesional-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.eneacoaching-profesional-text-content {
+  flex: 1;
+  max-width: 55%;
+  animation: fadeIn 1s ease;
+}
+
+.eneacoaching-profesional-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.eneacoaching-profesional-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.eneacoaching-profesional-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.eneacoaching-profesional-benefits-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.eneacoaching-profesional-benefits-list li {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: var(--text-color);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.eneacoaching-profesional-benefits-list li::before {
+  content: '✔';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.eneacoaching-profesional-methodology {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Botón */
+.btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Imagen */
+.eneacoaching-profesional-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(50px, 100px);
+}
+
+.eneacoaching-profesional-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
   .eneacoaching-profesional-content {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    flex-wrap: wrap; /* Añadido para que se ajuste en pantallas más pequeñas */
   }
-  
-  /* Texto a la izquierda */
+
   .eneacoaching-profesional-text-content {
-    flex: 1;
-    max-width: 55%; /* Limitamos el ancho del texto */
+    max-width: 100%;
+    text-align: center;
   }
-  
+
   .eneacoaching-profesional-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
   }
-  
+
   .eneacoaching-profesional-subtitle {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
+
+  .btn {
     margin-bottom: 1.5rem;
   }
-  
-  .eneacoaching-profesional-description {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-  }
-  
-  .eneacoaching-profesional-benefits-list {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-  
-  .eneacoaching-profesional-benefits-list li {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-  }
-  
-  .eneacoaching-profesional-methodology {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-top: 1.5rem;
-  }
-  
-  /* Botón */
-  .btn {
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: var(--secondary-color);
-  }
-  
-  /* Imagen a la derecha */
+
   .eneacoaching-profesional-image-container {
-    flex: 1;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
     display: flex;
-    justify-content: flex-end; /* Alinea la imagen a la derecha */
-    align-items: center;
+    justify-content: center; /* Centra la imagen dentro del contenedor */
+    margin-top: 1rem;
+    transform: none; /* Eliminar el desplazamiento en móvil */
   }
-  
+
   .eneacoaching-profesional-image {
-    max-width: 80%; /* Hace la imagen más pequeña */
+    max-width: 80%; /* Ajusta el tamaño para que no se salga */
     height: auto;
-    border-radius: 10px;
+    margin: 0 auto; /* Centra la imagen */
   }
-  
-  /* ========================= */
-  /*  Ajustes para pantallas pequeñas */
-  /* ========================= */
-  @media (max-width: 768px) {
-    .eneacoaching-profesional-content {
-      flex-direction: column; /* Hace que el contenido se apile en pantallas más pequeñas */
-      align-items: center; /* Centra el contenido */
-    }
-  
-    .eneacoaching-profesional-text-content {
-      max-width: 100%; /* Permite que el texto ocupe todo el ancho */
-      margin-bottom: 2rem; /* Da espacio entre el texto y la imagen */
-    }
-  
-    .eneacoaching-profesional-image-container {
-      width: 100%;
-      justify-content: center; /* Centra la imagen en pantallas pequeñas */
-    }
-  
-    .eneacoaching-profesional-image {
-      max-width: 90%; /* Hace la imagen un poco más grande en móviles, pero sin desbordar */
-    }
-  }
-  
+}

@@ -61,9 +61,8 @@ const EneaCoachingParejas = () => {
 
       <p><strong>¡No esperes más!</strong></p>
 
-      <a href="/consultas" className="btn btn-primary coaching-ontologico-btn">
-        Reserva Ahora tu Pack de 10 Sesiones para Parejas
-      </a>
+      <button className="contact-button">Reserva Ahora tu Pack de 10 Sesiones para Parejas</button>
+        
     </section>
   );
 };

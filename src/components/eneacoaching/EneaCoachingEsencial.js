@@ -46,9 +46,8 @@ const EneaCoachingEsencial = () => {
 
       <p><strong>¡No dejes pasar más tiempo!</strong></p>
 
-      <a href="/consultas" className="btn btn-primary coaching-ontologico-btn">
-        Reserva Ahora tu Pack de 10 Sesiones
-      </a>
+      <button className="contact-button">Reserva Ahora tu Pack de 10 Sesiones</button>
+        
     </section>
   );
 };

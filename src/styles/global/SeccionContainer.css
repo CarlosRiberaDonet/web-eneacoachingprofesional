@@ -52,7 +52,19 @@
     padding-left: 20px;
 }
 
+/* Imagen dentro del contenedor */
+.image-container {
+    margin: 20px auto;
+    text-align: center;
+}
 
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
 
 /* ========================= */
 /*  Estilos para el contenedor de precios */

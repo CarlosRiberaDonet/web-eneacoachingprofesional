@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../../styles/global/ButtonStyles.css';
+
 const EneaCoachingProfesional = () => {
   return (
     <section className="section-container">
@@ -46,19 +48,10 @@ const EneaCoachingProfesional = () => {
         El Pack de 10 sesiones de EneaCoaching Profesional es la inversión que te ayudará a dar un giro a tu carrera y encontrar el propósito que te motiva. Cada sesión está diseñada para ser un paso hacia el descubrimiento de tu verdadera pasión profesional y para empoderarte para tomar decisiones valientes y acertadas.
       </p>
 
-      <p><strong>¡No esperes más!</strong></p>
+      <h3><strong>¡No esperes más!</strong></h3>
 
-      <a href="/consultas" className="btn btn-primary coaching-ontologico-btn">
-        Reserva Ahora tu Pack de 10 Sesiones
-      </a>
-
-      <h3>EneaCoaching Esencial</h3>
-      <p>
-        Conecta con tu Esencia y Trasciende tu Ego con EneaCoaching Esencial
-      </p>
-      <p>
-        ¿Sientes que te has desconectado de tu verdadero ser? ¿Te encuentras atrapado en patrones repetitivos que no te permiten avanzar o ser la mejor versión de ti mismo? El EneaCoaching Esencial es un camino profundo de autodescubrimiento y transformación que te ayudará a trascender el ego, conectar con tu esencia y vivir una vida auténtica y alineada con tu ser más profundo.
-      </p>
+      <button className="contact-button">Reserva Ahora tu Pack de 10 Sesiones</button>
+      
     </section>
   );
 };

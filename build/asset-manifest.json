@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d828ee3.css",
-    "main.js": "/static/js/main.e75ce48d.js",
+    "main.css": "/static/css/main.7fab87b8.css",
+    "main.js": "/static/js/main.e169ba55.js",
     "static/media/2.png": "/static/media/2.1e593915761742e41ef7.png",
     "static/media/vicente.png": "/static/media/vicente.b494bea5decdcd8948d1.png",
     "static/media/eneacoaching.png": "/static/media/eneacoaching.176ad11bfe06134e8a20.png",
     "static/media/coaching.png": "/static/media/coaching.f1bb5e106467a89b8db9.png",
     "static/media/eneagrama.png": "/static/media/eneagrama.b1f7230b5dc9d9d5eed3.png",
     "index.html": "/index.html",
-    "main.0d828ee3.css.map": "/static/css/main.0d828ee3.css.map",
-    "main.e75ce48d.js.map": "/static/js/main.e75ce48d.js.map"
+    "main.7fab87b8.css.map": "/static/css/main.7fab87b8.css.map",
+    "main.e169ba55.js.map": "/static/js/main.e169ba55.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d828ee3.css",
-    "static/js/main.e75ce48d.js"
+    "static/css/main.7fab87b8.css",
+    "static/js/main.e169ba55.js"
   ]
 }

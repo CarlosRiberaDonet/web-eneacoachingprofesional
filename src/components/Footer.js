@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="footer-right-section">
           <h3>Contacta</h3>
           <p><a href="mailto:hola@eneacoaching.es" className="footer-link">📧 hola@eneacoaching.es</a></p>
-          <p><a href="tel:+34623148391" className="footer-link">📞 +34 623 14 83 91</a></p>
+          <p><a href="tel:+34623148391" className="footer-link">📞 696 667 110</a></p>
         </div>
       </div>
 

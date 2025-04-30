@@ -45,7 +45,10 @@ const Vicente = () => {
                 Si estás en un momento de cambio, quiero acompañarte en este viaje de autoconocimiento y transformación. 
                 Contacta conmigo y empecemos juntos.
             </p>
-            <button className="contact-button">📩 CONTACTA AQUÍ</button>
+            <div class="button-container">
+                <button class="contact-button">CONTACTA AQUÍ</button>
+            </div>
+
         </div>
     );
 };

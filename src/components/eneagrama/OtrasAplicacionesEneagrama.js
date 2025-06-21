@@ -23,7 +23,17 @@ const OtrasAplicaciones = () => {
             Puedes consultar si puedo aplicar el Eneagrama en algún otro ámbito. En caso contrario, me comprometo a proporcionarte un profesional de la Escuela Internacional en Eneagrama Aplicado que pueda usar esta poderosa herramienta en algún ámbito que yo no domino y que pueda ser de tu interés.
           </p>
 
-          <a href="/contacto" className="btn-sesion">Consultar</a>
+          <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Me gustaría solicitar información sobre otras aplicaciones del Eneagrama.",
+                "_blank"
+                );
+            }}
+            >
+            Consultar
+            </button>
     </section>
   );
 };

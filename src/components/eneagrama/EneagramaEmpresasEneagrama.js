@@ -36,7 +36,17 @@ const EneagramaEmpresas = () => {
                 todas estas áreas y que puedan satisfacer las necesidades de tu empresa.
             </p>
             
-            <a href="/contacto" className="btn-sesion">Contacta</a>    
+            <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Quisiera información sobre Enegrama para empresas.",
+                "_blank"
+                );
+            }}
+            >
+            Consulta
+            </button>  
             
         </div>
     );

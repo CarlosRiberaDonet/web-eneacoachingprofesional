@@ -44,7 +44,17 @@ const SesionesIndividuales = () => {
             Cada sesión está diseñada para trabajar en tus necesidades específicas, ya sea que busques más claridad en tu propósito, superar obstáculos emocionales o lograr objetivos personales y profesionales.
           </p>
 
-          <a href="/contacto" className="btn-sesion ">Reserva tu primera sesión</a>
+          <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Quiero información de sesiones individuales de Coaching Ontológico.",
+                "_blank"
+                );
+            }}
+            >
+            Consulta una sesión gratuita
+            </button>
         </div>
       </div>
     </section>

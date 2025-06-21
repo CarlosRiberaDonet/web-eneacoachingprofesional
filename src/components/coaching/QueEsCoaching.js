@@ -41,7 +41,17 @@ const QueEsCoaching = () => {
         En definitiva, el Coaching Ontológico no solo busca mejorar lo que haces, sino transformar quién eres para vivir con mayor autenticidad, claridad y propósito.
       </p>
 
-      <button className="contact-button">Consulta más sobre Coaching Ontológico</button>
+      <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Quiero información de Coaching Ontológico.",
+                "_blank"
+                );
+            }}
+            >
+            Consulta una sesión gratuita
+            </button>
     </div>
   );
 };

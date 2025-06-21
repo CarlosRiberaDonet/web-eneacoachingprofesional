@@ -45,10 +45,16 @@ const Vicente = () => {
                 Si estás en un momento de cambio, quiero acompañarte en este viaje de autoconocimiento y transformación. 
                 Contacta conmigo y empecemos juntos.
             </p>
-            <div class="button-container">
-                <button class="contact-button">CONTACTA AQUÍ</button>
+            <div className="button-container">
+            <button
+                className="contact-button"
+                onClick={() => {
+                window.open("https://wa.me/34696667110", "_blank");
+                }}
+            >
+                CONTACTA AQUÍ
+            </button>
             </div>
-
         </div>
     );
 };

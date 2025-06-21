@@ -49,7 +49,17 @@ const EneaCoachingParejas = () => {
 
       <p><strong>¡No esperes más!</strong></p>
 
-      <button className="contact-button">Reserva Ahora tu Pack de 10 Sesiones para Parejas</button>
+       <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Quiero información sobre EneaCoaching para parejas.",
+                "_blank"
+                );
+            }}
+            >
+            Reserva Ahora tu Pack de 10 Sesiones para Parejas
+            </button>
         
     </section>
   );

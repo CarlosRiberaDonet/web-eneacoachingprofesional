@@ -22,20 +22,24 @@ const Typing = () => {
         </p>
 
         <button
-          className="btn-contacto"
-          onClick={() => {
-            const section = document.getElementById("contacto");
-            section?.scrollIntoView({ behavior: "smooth" });
-            }}
-            >Consulta una sesión gratuita</button>
+  className="btn-contacto"
+  onClick={() => {
+    window.open(
+      "https://wa.me/34696667110?text=Hola%21%20Quisiera%20solicitar%20informaci%C3%B3n%20para%20una%20sesi%C3%B3n%20gratuita",
+      "_blank"
+    );
+  }}
+>
+    Consulta una sesión gratuita
+      </button>
 
-        {/* Imagen centrada bajo el botón */}
-        <div className="image-container">
-          <img src="/images/sesiongratuita.png" alt="EneaCoaching Profesional" className="eneacoaching-image" />
+          {/* Imagen centrada bajo el botón */}
+          <div className="image-container">
+            <img src="/images/sesiongratuita.png" alt="EneaCoaching Profesional" className="eneacoaching-image" />
+          </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
 };
 
 export default Typing;

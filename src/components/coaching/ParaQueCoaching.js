@@ -66,9 +66,17 @@ const ParaQueCoaching = () => {
         En resumen, el Coaching Ontológico no solo ayuda a cambiar lo que hacemos, sino a transformar nuestra manera de ser y percibir el mundo, creando una vida más plena, consciente y alineada con nuestro propósito.
       </p>
 
-      <a href="/consultas" className="btn btn-primary coaching-ontologico-btn">
-        Consulta más sobre Coaching Ontológico
-      </a>
+      <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Quiero información sobre aplicaciones del Coaching Ontológico.",
+                "_blank"
+                );
+            }}
+            >
+            Consulta una sesión gratuita
+            </button>
     </div>
   );
 };

@@ -57,6 +57,9 @@ const Header = () => {
         </button>
 
         <ul className={`custom-nav-links ${menuOpen ? "active" : ""}`}>
+             <li>
+              <Link to="/" onClick={handleLinkClick}>Inicio</Link>
+            </li>
           <li className={`custom-dropdown ${activeDropdown === "eneagrama" ? "active" : ""}`}>
             <Link to="/eneagrama" onClick={() => {toggleDropdown("eneagrama"); window.scrollTo(0, 0)}}>Eneagrama ▾</Link>
             <ul className="custom-dropdown-menu">
@@ -90,8 +93,13 @@ const Header = () => {
             </ul>
           </li>
 
-          <Link to="/vicente" onClick={handleLinkClick}>Sobre mí</Link>
-          <Link to="/contacto" onClick={handleLinkClick}>Contacto</Link>
+          <li>
+            <Link to="/vicente" onClick={handleLinkClick}>Sobre mí</Link>
+          </li>
+          <li>
+            <Link to="/contacto" onClick={handleLinkClick}>Contacto</Link>
+          </li>
+
         </ul>
       </nav>
     </header>

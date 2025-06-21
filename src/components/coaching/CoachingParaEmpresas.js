@@ -83,7 +83,17 @@ const CoachingParaEmpresas = () => {
         <b>Reserva ahora una consulta inicial</b> y descubre cómo podemos ayudar a tu empresa a alcanzar nuevas alturas.
       </p>
 
-      <a href="/contacto" className="btn-sesion">Solicita una Consulta Ahora</a>
+      <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Quiero información de Coaching para empresas.",
+                "_blank"
+                );
+            }}
+            >
+            Consulta una sesión gratuita
+            </button>
     </section>
   );
 };

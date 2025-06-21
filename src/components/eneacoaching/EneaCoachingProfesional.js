@@ -50,7 +50,17 @@ const EneaCoachingProfesional = () => {
 
       <h3><strong>¡No esperes más!</strong></h3>
 
-      <button className="contact-button">Reserva Ahora tu Pack de 10 Sesiones</button>
+      <button 
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Quiero información sobre EneaCoaching Profesional.",
+                "_blank"
+                );
+            }}
+            >
+            Reserva Ahora tu Pack de 10 Sesiones
+            </button>
       
     </section>
   );

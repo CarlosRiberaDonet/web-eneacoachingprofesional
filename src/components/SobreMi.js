@@ -37,8 +37,7 @@ const SobreMi = () => {
           <button
           className="btn-contacto"
           onClick={() => {
-            const section = document.getElementById("contacto");
-            section?.scrollIntoView({ behavior: "smooth" });
+            window.open("https://wa.me/34696667110", "_blank");
           }}
           >Contacta</button>
 

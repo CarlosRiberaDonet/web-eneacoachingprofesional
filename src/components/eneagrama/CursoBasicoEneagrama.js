@@ -30,7 +30,17 @@ const CursoBasico = () => {
                 implementarlo y al tiempo que dispongas.
             </p>
 
-            <a href="/contacto" className="btn-sesion ">Consultar</a>
+            <button
+            className="btn-contacto"
+            onClick={() => {
+                window.open(
+                "https://wa.me/34696667110?text=Hola. Me gustaría solicitar información del curso básico de Eneagrama.",
+                "_blank"
+                );
+            }}
+            >
+            Consulta una sesión gratuita
+            </button>
 
         </div>
     );

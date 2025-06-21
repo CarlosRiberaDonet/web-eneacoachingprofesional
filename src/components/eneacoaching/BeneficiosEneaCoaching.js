@@ -40,7 +40,10 @@ const BeneficiosEneaCoaching = () => {
         En resumen, el EneaCoaching es un proceso de acompañamiento único que no solo te ayuda a alcanzar metas concretas, sino que también transforma tu manera de ser y estar en el mundo, alineándote con tu verdadero propósito.
       </p>
 
-      <button className="contact-button">Consulta más sobre EneaCoaching</button>
+      <a href="https://wa.me/34696667110" target="_blank" rel="noopener noreferrer">
+        <button className="contact-button">Consulta más sobre EneaCoaching</button>
+      </a>
+
     </div>
   );
 };

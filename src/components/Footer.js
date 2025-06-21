@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
-import { FaYoutube, FaInstagram, FaLinkedin, FaTiktok, FaFacebook } from "react-icons/fa";
+import { FaYoutube, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -13,10 +13,10 @@ const Footer = () => {
             <Link to="/vicente" className="footer-link">VICENTE MONTOLÍO IZQUIERDO</Link>
           </h2>
           <div className="social-icons-footer">
+            <a href="https://wa.link/f7o11t" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+            <a href="https://www.instagram.com/vicentemontoliocoach/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             <a href="#" className="footer-link"><FaYoutube /></a>
-            <a href="#" className="footer-link"><FaInstagram /></a>
-            <a href="#" className="footer-link"><FaLinkedin /></a>
-            <a href="#" className="footer-link"><FaFacebook /></a>
+            <a href="https://es.linkedin.com/in/vicente-montol%C3%ADo-izquierdo-a878111a6" className="footer-link"><FaLinkedin /></a>
           </div>
         </div>
 
@@ -33,7 +33,7 @@ const Footer = () => {
         {/* Sección Derecha - Contacto */}
         <div className="footer-right-section">
           <h3>Contacta</h3>
-          <p><a href="mailto:hola@eneacoaching.es" className="footer-link">📧 hola@eneacoaching.es</a></p>
+          <p><a href="Vicente@eneacoachingprofesional.es" className="footer-link">📧 Vicente@eneacoachingprofesional.es</a></p>
           <p><a href="tel:+34623148391" className="footer-link">📞 696 667 110</a></p>
         </div>
       </div>

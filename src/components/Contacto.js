@@ -14,13 +14,13 @@ const Contacto = () => {
           <p>
             Envíanos un mensaje a través de este formulario. También puedes contactarnos en:
           </p>
-          <p><strong>Email:</strong> enea@eneacoachingprofesional.es</p>
+          <p><strong>Email:</strong> Vicente@eneacoachingprofesional.es</p>
           <p><strong>WhatsApp:</strong> +34 696 667 110</p>
         </div>
 
         {/* Formulario */}
         <div className="contacto-form">
-          <form>
+          <form action="mailto:vicente@eneacoachingprofesional.es" method="POST" encType="text/plain">
             <input type="text" placeholder="Nombre" required />
             <input type="email" placeholder="Correo electrónico" required />
             <input type="tel" placeholder="Teléfono" required />

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "../styles/SocialBar.css";
 const SocialBar = () => {
   return (
@@ -8,10 +8,9 @@ const SocialBar = () => {
       <div className="social-container">
         {/*  Redes Sociales */}
         <div className="social-icons">
-          <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <a href="https://wa.link/f7o11t" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+          <a href="https://www.instagram.com/vicentemontoliocoach/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://es.linkedin.com/in/vicente-montol%C3%ADo-izquierdo-a878111a6" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         </div>
         {/*  Teléfono */}
         <div className="phone-number">

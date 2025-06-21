@@ -35,18 +35,6 @@ const EneaCoachingParejas = () => {
         <li>5. Transformación personal y relacional: Las sesiones de EneaCoaching para Parejas no solo mejorarán la relación de pareja, sino que también fomentarán el crecimiento personal de ambos, permitiéndoles ser individuos más conscientes y maduros dentro de la relación.</li>
       </ul>
 
-      <h3>Testimonios:</h3>
-      <p>
-        "Las sesiones de EneaCoaching nos ayudaron a entender las necesidades y motivaciones del otro de una forma que nunca habíamos logrado antes. La comunicación mejoró muchísimo y, lo más importante, sentimos que nuestra relación se fortaleció."
-        <br />
-        — Laura y Andrés P., Pareja casada
-      </p>
-      <p>
-        "Gracias al proceso de EneaCoaching, descubrimos patrones de comportamiento que estaban afectando nuestra relación. Ahora, entendemos cómo resolver los conflictos de manera más saludable y hemos vuelto a sentirnos profundamente conectados."
-        <br />
-        — Carla y Juan T., Pareja en proceso de mejora
-      </p>
-
       <h3>¿Por qué elegir EneaCoaching para Parejas?</h3>
       <ul>
         <li>Enfoque personalizado y profundo: Cada pareja es única, y las sesiones se adaptan específicamente a las necesidades y dinámicas de tu relación.</li>

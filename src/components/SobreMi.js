@@ -22,6 +22,7 @@ const SobreMi = () => {
 
           <h2 className="subheading">🚀 ¿Qué lograrás conmigo?</h2>
           <ul className="benefits-list">
+            <li>✔ Descubrir y trascender tus sombras.</li>
             <li>✔ Descubrir y potenciar tus fortalezas.</li>
             <li>✔ Lograr tus objetivos con mayor claridad y propósito.</li>
             <li>✔ Transformar tu vida y alinearte con tus valores más auténticos.</li>

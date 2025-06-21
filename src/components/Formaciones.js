@@ -10,16 +10,16 @@ import eneagrama from '../assets/images/eneagrama.png';
 
 const formacionesData = [
   {
-    image: coaching,
-    title: "COACHING PARA EMPRESAS",
-    description: "Conecta con tu máximo potencial en tu empresa y alinea tus creencias, valores y fortalezas con tu equipo de trabajo",
-    link: "/eneagrama#eneagrama-empresas",
-  },
-  {
     image: eneacoaching,
     title: "ENEACOACHING PROFESIONAL",
     description: "Conecta con tu esencia y con tu propósito profesional a través del Eneagrama y del Coaching Ontológico",
     link: "/eneacoaching#eneacoaching-profesional",
+  },
+  {
+    image: coaching,
+    title: "COACHING PARA EMPRESAS",
+    description: "Conecta con tu máximo potencial en tu empresa y alinea tus creencias, valores y fortalezas con tu equipo de trabajo",
+    link: "/eneagrama#eneagrama-empresas",
   },
   {
     image: eneagrama,

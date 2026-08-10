@@ -37,29 +37,29 @@ Web de una página con enrutado cliente-side (SPA) que expone los servicios de c
 
 ```mermaid
 flowchart TD
-    A([Inicio /]) --> B[/eneagrama]
-    A --> C[/coaching]
-    A --> D[/eneacoaching]
-    A --> E[/vicente]
-    A --> F[/contacto]
+    A([Inicio /]) --> B["/eneagrama"]
+    A --> C["/coaching"]
+    A --> D["/eneacoaching"]
+    A --> E["/vicente"]
+    A --> F["/contacto"]
 
-    B --> B1[#que-es-eneagrama]
-    B --> B2[#para-que-eneagrama]
-    B --> B3[#tipos-eneagrama]
-    B --> B4[#curso-basico]
-    B --> B5[#eneagrama-empresas]
-    B --> B6[#otras-aplicaciones]
+    B --> B1["#que-es-eneagrama"]
+    B --> B2["#para-que-eneagrama"]
+    B --> B3["#tipos-eneagrama"]
+    B --> B4["#curso-basico"]
+    B --> B5["#eneagrama-empresas"]
+    B --> B6["#otras-aplicaciones"]
 
-    C --> C1[#que-es-coaching]
-    C --> C2[#para-que-coaching]
-    C --> C3[#sesiones-individuales]
-    C --> C4[#coaching-empresas]
+    C --> C1["#que-es-coaching"]
+    C --> C2["#para-que-coaching"]
+    C --> C3["#sesiones-individuales"]
+    C --> C4["#coaching-empresas"]
 
-    D --> D1[#que-es-eneacoaching]
-    D --> D2[#para-que-eneacoaching]
-    D --> D3[#eneacoaching-profesional]
-    D --> D4[#eneacoaching-esencial]
-    D --> D5[#eneacoaching-parejas]
+    D --> D1["#que-es-eneacoaching"]
+    D --> D2["#para-que-eneacoaching"]
+    D --> D3["#eneacoaching-profesional"]
+    D --> D4["#eneacoaching-esencial"]
+    D --> D5["#eneacoaching-parejas"]
 ```
 
 ---
